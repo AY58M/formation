@@ -1,0 +1,48 @@
+/* petit appareil mobile */
+@media screen and (max-width: 576px) {
+    * {
+        background-color: orange;
+        font-size: 8px;
+    }
+}
+
+/* tablette ipad mini */
+
+@media screen and (min-width:576px) and (max-width:767px) {
+
+    * {
+        background-color: red;
+        font-size: 12px;
+    }
+
+}
+
+/* tablette 10 pouces */
+@media screen and (min-width:768px) and (max-width:991px) {
+
+    * {
+        background-color: blue;
+        font-size: 18px;
+    }
+
+}
+
+/* PC portable */
+@media screen and (min-width:992px) and (max-width:1199px) {
+
+    * {
+        background-color: aqua;
+        font-size: 24px;
+    }
+}
+
+/* grand ecran */
+@media screen and (min-width:1200px) {
+
+    * {
+
+        background-color: blueviolet;
+        font-size: 40px;
+    }
+
+}

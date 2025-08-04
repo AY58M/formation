@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#title {
+    background-color: rgb(224, 247, 189);
+}
+
+.forme {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+#Couleur {
+    background-color: rgb(210, 234, 240);
+    padding-left: 0px;
+    display: flex;
+}
+
+#Couleur li {
+    list-style: none;
+    padding: 10px;
+}
+
+#Couleur li:hover {
+    background-color: rgb(179, 201, 206);
+}
+
+#Couleur li a {
+    color: rgb(196, 113, 189);
+    text-decoration: none;
+}
+
+.monCV {
+    background-color: rgb(179, 201, 206);
+}
+
+body{
+        max-width: 1000px;
+        margin: 20px auto;
+        padding: 0 10px;
+
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 5px solid purple;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.Bordure {
+    border-left: 5px solid purple;
+    padding-left: 20px;
+}
+
+.TitlesColor{
+    color: purple;
+}
+
+

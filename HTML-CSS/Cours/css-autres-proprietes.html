@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/css-autres-proprietes.css">
+    <title>Cours : CSS</title>
+</head>
+<body>
+    <h1>Cours : CSS</h1>
+
+    <section id="ImagesEtCouleurs">
+        <h2>1) Les images et couleurs en CSS</h2>
+
+        <p><strong>background-size: contain;</strong> Toute l'image s'affiche mais ne rempli pas toujours son élément html</p>
+        <div class="size100x100 imageEnBackgroundContain border1pxBlack"></div>
+        <div class="size500x500 imageEnBackgroundContain border1pxBlack"></div>
+    
+        <p><strong>background-size: cover;</strong>L'image rempli son élément html</p>
+        <div class="size100x100 imageEnBackgroundCover border1pxBlack"></div>
+        <div class="size500x500 imageEnBackgroundCover border1pxBlack"></div>
+    
+        <p>Dégradé linéaire</p>
+        <div class="size100x100 gradientEnBackground"></div>
+        <p>Dégradé radial</p>
+        <div class="size100x100 radialEnBackground"></div>
+        <p>Un dégradé à 3 couleurs</p>
+        <div class="size100x100 gradient3CouleursEnBackground"></div>
+    </section>
+
+    <section id="Bordures">
+        <h2>2) Les bordures</h2>
+
+        <p>Une bordure complète</p>
+        <div class="size100x100 border1pxBlack"></div>
+        <p>Une bordure en bas uniquement</p>
+        <div class="size100x100 borderBottom"></div>
+        <p>Une bordure sur la gauche uniquement</p>
+        <div class="size100x100 borderLeft"></div>
+    </section>
+
+    <section id="BlockEtInline">
+        <h2>3) Les balises block et inline</h2>
+
+        <p>Les balises de type block sont des balises qui prennent toute la largeur de la page. 
+            Le cadre rouge représente la limite de l'élément html</p>
+        <h1 id="tests" class="border1pxRed">Titres : balises block</h1>
+        <p>Les liens sont des balises de type inline qui délimitent le contenu de l'élément.
+            Les balises "inline" vont se placer l'un après l'autre tant qu'il y a la place pour son affichage.
+        </p>
+        <a class="border1pxRed" href="">Un lien : balise inline</a>
+        <a class="border1pxRed" href="">Un autre lien avec un contenu beaucoup plus grand !</a>
+        <p>Chaques éléments html est de type block, ou inline. On peut modifier son comportement avec la propriété display</p>
+        <h3 class="inline border1pxRed">Ce titre devrait être de type block !</h3>
+        <p>Il existe 2 balises universelles : div et span.</p>
+        <p>La balise div est de type block</p>
+        <div class="border1pxRed">une balise div</div>
+        <p>La balise span est de type inline</p>
+        <span class="border1pxRed">une balise span</span>
+        <p>remarque si on définit une taille sur une balise de type block, elle aura le visuel d'une balise inline, mais 
+            son type sera toujours de type block !
+        </p>
+        <p>On peut mettre des marges automatiques sur un élément qui ne prend pas toute la largeur de la page pour le
+            centrer par exemple
+        </p>
+        <div class="height100 width500 backgroundRed margin-left-right-auto"></div>
+    </section>
+
+    <section id="Marges">
+        <h2>4) Les marges</h2>
+
+        <p>Il y a 2 types de marges. Les marges externes (margin) et les marges internes (padding)</p>
+        <p>Ces éléments n'ont pas de marges</p>
+        <div class="backgroundGreen border1pxBlack">
+            <div class="size200x200 backgroundGreen2 border1pxBlack"></div>
+        </div>
+        <p>Les mêmes éléments mais avec des marges externes (margin) a l'élément en vert clair</p>
+        <div class="backgroundGreen border1pxBlack margin4Cotes">
+            <div class="size200x200 backgroundGreen2 border1pxBlack"></div>
+        </div>
+        <p>Les mêmes éléments mais avec des marges intenre (padding) a l'élément en vert clair.
+            On voit bien que l'élément en vert clair a complètement changé de taille à cause du padding
+        </p>
+        <div class="backgroundGreen border1pxBlack padding4Cotes">
+            <div class="size200x200 backgroundGreen2 border1pxBlack"></div>
+        </div>
+        <p>Si je met des marges internes sur l'élément en vert foncé, sa taille augmentera forcément.</p>
+        <div class="backgroundGreen border1pxBlack">
+            <div class="size200x200 backgroundGreen2 border1pxBlack padding4Cotes"></div>
+        </div>
+        <p>Si je met des marges externes sur l'élément en vert foncé. Le résultat est le même qu'avec des marges internes
+            sur l'élément en vert clair.
+        </p>
+        <div class="backgroundGreen border1pxBlack">
+            <div class="size200x200 backgroundGreen2 border1pxBlack margin4Cotes"></div>
+        </div>
+        <p>Une marge sur 2 cotés</p>
+        <div class="backgroundGreen border1pxBlack border1pxBlack margin-gauche-droite">Marge a gauche et a droite</div>
+        <p>Une marge sur 1 coté</p>
+        <div class="backgroundGreen border1pxBlack border1pxBlack margin-gauche">Marge à gauche seulement</div>
+    </section>
+
+    <section id="Dimensions">
+        <h2>5) Les dimensions</h2>
+
+        <p>Une div (type block) avec une hauteur définie</p>
+        <div class="height200 backgroundRed"></div>
+        <p>Un bouton est de type inline</p>
+        <button>Je suis inline</button>
+        <p>Une div (type block) avec une hauteur et une largeur définie. ! Elle sera toujours de type block !</p>
+        <div class="height100 width500 backgroundRed"></div>
+        <p>On peut faire des formes simples comme un carré</p>
+        <div class="size200x200 backgroundRed"></div>
+        <p>Ou un cercle en rajoutant la propriété <strong>border-radius</strong></p>
+        <div class="cercle backgroundRed"></div>
+        <p>Un tout petit cercle grâce avec une bordure à la place de la couleur de l'arrière-plan</p>
+        <div class="petitCercle border3pxRed"></div>
+        <p>Ou encore un carré arrondi, toujours avec la propriété <strong>border-radius</strong></p>
+        <div class="arrondi backgroundRed"></div>
+    </section>
+
+    <section id="Depassements">
+        <h2>6) Les dépassements (overflow)</h2>
+
+        <p>Dans certains cas, lorsque l'on a définit une taille précise à un élément html (appelé aussi container),
+            Si on ajoute trop de texte, on aura ce qu'on appelle un <strong>dépassement</strong>.
+        </p>
+        <p>J'ai un "containeur" div avec une hauteur de 100px qui contient trop de texte</p>
+        <div class="height100 border3pxRed margin-bottom">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam venenatis vitae risus in bibendum. Vestibulum maximus urna mi, eget feugiat purus elementum fermentum. Etiam diam arcu, mollis et laoreet eget, faucibus vitae erat. Aliquam scelerisque euismod aliquam. Ut a metus quis lacus blandit efficitur. Ut molestie diam ac lacus porttitor, id auctor nunc ornare. Aenean sed pulvinar augue. Nunc eget turpis quis lacus gravida elementum et maximus sapien. Nulla venenatis ornare nisl, dictum fermentum est imperdiet eget. Cras venenatis porttitor enim, id blandit lacus sagittis at.
+            Aliquam consequat eros a congue venenatis. Vestibulum vitae leo orci. Aliquam ullamcorper varius mi, id consequat leo placerat quis. Nulla at leo non mi tempor cursus et vel ligula. Donec nec urna sit amet dui maximus viverra eget ac ipsum. Duis vitae felis rhoncus, sagittis diam scelerisque, consectetur erat. Integer tortor nibh, vehicula nec augue vitae, pharetra tristique odio. Fusce a posuere augue. Maecenas mollis bibendum elit, et gravida orci. Pellentesque eu condimentum lacus. Ut ipsum urna, rhoncus et malesuada et, pellentesque in massa. Nam mollis, velit sit amet pellentesque euismod, justo nunc interdum turpis, vitae ullamcorper metus urna at magna. Vestibulum vestibulum, augue sed blandit euismod, eros erat dictum sem, semper dignissim neque nulla vitae sapien.
+            Curabitur nec vestibulum ex. In feugiat diam id convallis bibendum. Integer consequat sollicitudin justo, in ultrices enim consectetur quis. Sed in ullamcorper tortor, ut facilisis justo. Mauris id laoreet ex. Mauris porta elit ante. Nulla et tellus ut ex rhoncus rhoncus non nec felis. Duis ante leo, tristique id nunc id, suscipit elementum lorem. Praesent vestibulum laoreet turpis. Vivamus a ex ligula. Donec sapien nibh, aliquam a neque id, ultrices pharetra ex. Aenean dignissim ante sit amet ipsum congue porta. Donec sagittis mollis lacus ut blandit. Vivamus dignissim tristique justo eget pellentesque. Donec venenatis elit a ligula interdum iaculis. 
+        </div>
+        <p>J'ajoute la propriété overflow pour créer un scroll dans mon container</p>
+        <div class="height100 border3pxRed overflowAuto">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam venenatis vitae risus in bibendum. Vestibulum maximus urna mi, eget feugiat purus elementum fermentum. Etiam diam arcu, mollis et laoreet eget, faucibus vitae erat. Aliquam scelerisque euismod aliquam. Ut a metus quis lacus blandit efficitur. Ut molestie diam ac lacus porttitor, id auctor nunc ornare. Aenean sed pulvinar augue. Nunc eget turpis quis lacus gravida elementum et maximus sapien. Nulla venenatis ornare nisl, dictum fermentum est imperdiet eget. Cras venenatis porttitor enim, id blandit lacus sagittis at.
+            Aliquam consequat eros a congue venenatis. Vestibulum vitae leo orci. Aliquam ullamcorper varius mi, id consequat leo placerat quis. Nulla at leo non mi tempor cursus et vel ligula. Donec nec urna sit amet dui maximus viverra eget ac ipsum. Duis vitae felis rhoncus, sagittis diam scelerisque, consectetur erat. Integer tortor nibh, vehicula nec augue vitae, pharetra tristique odio. Fusce a posuere augue. Maecenas mollis bibendum elit, et gravida orci. Pellentesque eu condimentum lacus. Ut ipsum urna, rhoncus et malesuada et, pellentesque in massa. Nam mollis, velit sit amet pellentesque euismod, justo nunc interdum turpis, vitae ullamcorper metus urna at magna. Vestibulum vestibulum, augue sed blandit euismod, eros erat dictum sem, semper dignissim neque nulla vitae sapien.
+            Curabitur nec vestibulum ex. In feugiat diam id convallis bibendum. Integer consequat sollicitudin justo, in ultrices enim consectetur quis. Sed in ullamcorper tortor, ut facilisis justo. Mauris id laoreet ex. Mauris porta elit ante. Nulla et tellus ut ex rhoncus rhoncus non nec felis. Duis ante leo, tristique id nunc id, suscipit elementum lorem. Praesent vestibulum laoreet turpis. Vivamus a ex ligula. Donec sapien nibh, aliquam a neque id, ultrices pharetra ex. Aenean dignissim ante sit amet ipsum congue porta. Donec sagittis mollis lacus ut blandit. Vivamus dignissim tristique justo eget pellentesque. Donec venenatis elit a ligula interdum iaculis. 
+        </div>
+        <p>Je peux aussi cacher le contenu</p>
+        <div class="height100 border3pxRed overflowHide">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam venenatis vitae risus in bibendum. Vestibulum maximus urna mi, eget feugiat purus elementum fermentum. Etiam diam arcu, mollis et laoreet eget, faucibus vitae erat. Aliquam scelerisque euismod aliquam. Ut a metus quis lacus blandit efficitur. Ut molestie diam ac lacus porttitor, id auctor nunc ornare. Aenean sed pulvinar augue. Nunc eget turpis quis lacus gravida elementum et maximus sapien. Nulla venenatis ornare nisl, dictum fermentum est imperdiet eget. Cras venenatis porttitor enim, id blandit lacus sagittis at.
+            Aliquam consequat eros a congue venenatis. Vestibulum vitae leo orci. Aliquam ullamcorper varius mi, id consequat leo placerat quis. Nulla at leo non mi tempor cursus et vel ligula. Donec nec urna sit amet dui maximus viverra eget ac ipsum. Duis vitae felis rhoncus, sagittis diam scelerisque, consectetur erat. Integer tortor nibh, vehicula nec augue vitae, pharetra tristique odio. Fusce a posuere augue. Maecenas mollis bibendum elit, et gravida orci. Pellentesque eu condimentum lacus. Ut ipsum urna, rhoncus et malesuada et, pellentesque in massa. Nam mollis, velit sit amet pellentesque euismod, justo nunc interdum turpis, vitae ullamcorper metus urna at magna. Vestibulum vestibulum, augue sed blandit euismod, eros erat dictum sem, semper dignissim neque nulla vitae sapien.
+            Curabitur nec vestibulum ex. In feugiat diam id convallis bibendum. Integer consequat sollicitudin justo, in ultrices enim consectetur quis. Sed in ullamcorper tortor, ut facilisis justo. Mauris id laoreet ex. Mauris porta elit ante. Nulla et tellus ut ex rhoncus rhoncus non nec felis. Duis ante leo, tristique id nunc id, suscipit elementum lorem. Praesent vestibulum laoreet turpis. Vivamus a ex ligula. Donec sapien nibh, aliquam a neque id, ultrices pharetra ex. Aenean dignissim ante sit amet ipsum congue porta. Donec sagittis mollis lacus ut blandit. Vivamus dignissim tristique justo eget pellentesque. Donec venenatis elit a ligula interdum iaculis. 
+        </div>
+    </section>
+
+    <section id="StylesDynamiques">
+        <h2>7) Les styles dynamiques</h2>
+
+        <p>En CSS, on a ce qu'on appelle du style dynamique. Ce sont des propriétés qui vont s'appliquer sur un elément html
+            lorsque qu'un action est effectué. Comme le passage de la souris, un clic, un double clic, un clic enfoncé, ...
+        </p>
+        <p>Pour appliquer un style dynamique en css, on respecte la syntaxe suivante :</p>
+        <pre>
+            sélecteur:nom_de_l_action {
+                style css a appliquer
+            }
+    
+            EXEMPLE :
+    
+            a:hover {
+                font-style: bold;
+            }
+        </pre>
+        <div class="hoverTexteEnGrasEtItalique">Passez la souris sur cet élément pour modifier le texte en gras, italique, et sa couleur</div>
+        <div class="activeTextEnBleu colorWhite">Maintenez le clic sur cet élément pour changer la couleur du texte</div>
+        <p>Il en existe beaucoup d'autres ...</p>
+    </section>
+
+</body>
+</html>

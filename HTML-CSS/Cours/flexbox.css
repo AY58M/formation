@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.conteneur {
+    margin: 2rem auto;
+    width: 90%;
+    height: 1000px;
+    border: 2px solid black;
+    display: flex;
+    /* activer le mode flexbox */
+    flex-direction: row;
+    /* changer l'axe principal */
+    justify-content: center;
+    /* agit sur l'axe principal */
+    align-items: center;
+    /* agit sur l'axe secondaire */
+    flex-wrap: wrap;
+    /* passer les éléments sur plusieurs ligne s'ils n'ont pas assez d'éspace */
+    gap: 50px;
+    /* ajouter des éspaces entre les items */
+}
+
+.item {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    border: 1px solid black;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 46px;
+}

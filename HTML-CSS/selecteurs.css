@@ -1,0 +1,42 @@
+/* selecteur universel */
+
+* {
+    background-color: aliceblue;
+}
+
+/* selecteurs par balise */
+p {
+    color: orange;
+}
+
+/* selecteurs par classe */
+.maclass {
+    background-color: blue;
+}
+
+/* selecteurs par id */
+
+#monid {
+    color: blueviolet;
+}
+
+/* selection de plusieur balises */
+h1,
+h2,
+h3 {
+    background-color: aquamarine;
+}
+
+/* selecteurs descendants */
+
+h3 em {
+    color: magenta;
+}
+
+h3 strong {
+    font-size: 24px;
+}
+
+#demo p {
+    background-color: chartreuse;
+}

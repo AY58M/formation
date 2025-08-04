@@ -1,0 +1,43 @@
+/* Cette classe ne peut pas être modifiée ! */
+.carre {
+    padding: 10px;
+    margin: 10px;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(153, 11, 11);
+}
+
+/* Ajoutez votre code CSS ici : */
+.strong {
+    font-weight: normal;
+}
+
+#Link {
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+}
+
+
+#couleur {
+
+    background-color: green;
+}
+
+#taille { 
+    width: 250px; 
+    height: 250px;
+}
+
+#bordure {
+    border: 2px solid;
+    border-color: black;
+}
+
+#modification {
+    background-color: green;
+    width: 250px;
+    height: 250px;
+    border: 2px solid;
+    border-color: black;
+}

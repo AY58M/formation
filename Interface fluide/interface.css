@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+span {
+    color: rgb(8, 8, 191);
+}
+
+.page {
+    background-color: antiquewhite;
+}
+
+.entete {
+    background-color: black;
+    margin: 5px 0;
+    padding: 20px;
+    border-bottom: 4px solid blue;
+}
+
+.colonnes {
+    background-color: antiquewhite;
+    display: flex;
+
+}
+
+.menu {
+    background-color: black;
+    padding: 5px 0 0 20px;
+    width: 200px;
+    box-sizing: border-box;
+    margin: 0%;
+
+}
+.police{color: white;
+
+}
+
+.contenu {
+    background-color: white;
+    padding: 2%;
+}
+.contenu-interieur{
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.piedpage {
+    background-color: blue;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.marge {
+    margin: 0;
+}
