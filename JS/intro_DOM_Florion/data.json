@@ -1,0 +1,102 @@
+[
+  {
+    "titre": "Découverte d’une nouvelle exoplanète",
+    "paragraphe": "Des astronomes ont découvert une exoplanète potentiellement habitable située à 120 années-lumière de la Terre.",
+    "dateSortie": "2025-09-15"
+  },
+  {
+    "titre": "Une avancée dans la lutte contre le cancer",
+    "paragraphe": "Une équipe de chercheurs a mis au point un traitement prometteur capable de cibler les cellules cancéreuses sans affecter les cellules saines.",
+    "dateSortie": "2025-08-22"
+  },
+  {
+    "titre": "Les glaciers fondent à un rythme alarmant",
+    "paragraphe": "Les dernières données satellites montrent une fonte accélérée des glaciers, menaçant les niveaux des mers dans les prochaines décennies.",
+    "dateSortie": "2025-07-30"
+  },
+  {
+    "titre": "La technologie 6G en phase de test",
+    "paragraphe": "Les premiers essais de la 6G ont débuté dans plusieurs pays, promettant une connectivité 100 fois plus rapide que la 5G.",
+    "dateSortie": "2025-06-18"
+  },
+  {
+    "titre": "Un robot cuisinier révolutionne les restaurants",
+    "paragraphe": "Un nouveau robot doté d’intelligence artificielle est capable de préparer des plats complexes en quelques minutes.",
+    "dateSortie": "2025-09-10"
+  },
+  {
+    "titre": "Record mondial de production d’énergie solaire",
+    "paragraphe": "Un nouveau parc solaire en Inde bat le record de production mondiale d’énergie renouvelable.",
+    "dateSortie": "2025-05-12"
+  },
+  {
+    "titre": "Les voitures volantes arrivent sur le marché",
+    "paragraphe": "Une start-up japonaise lance le premier modèle de voiture volante commercialisée dès 2026.",
+    "dateSortie": "2025-08-01"
+  },
+  {
+    "titre": "Une IA écrit un roman à succès",
+    "paragraphe": "Un roman entièrement rédigé par une intelligence artificielle entre dans le top 10 des ventes en Europe.",
+    "dateSortie": "2025-09-05"
+  },
+  {
+    "titre": "Une nouvelle espèce marine découverte",
+    "paragraphe": "Des scientifiques ont identifié une nouvelle espèce de méduse dans les profondeurs de l’océan Pacifique.",
+    "dateSortie": "2025-06-25"
+  },
+  {
+    "titre": "Le retour des vols spatiaux commerciaux",
+    "paragraphe": "Une compagnie privée relance les vols spatiaux touristiques avec des billets vendus en quelques heures.",
+    "dateSortie": "2025-09-12"
+  },
+  {
+    "titre": "Une appli pour détecter les maladies par la voix",
+    "paragraphe": "Des chercheurs ont mis au point une application capable de détecter certaines maladies à partir de la voix de l’utilisateur.",
+    "dateSortie": "2025-07-10"
+  },
+  {
+    "titre": "Un record de température en Antarctique",
+    "paragraphe": "L’Antarctique a enregistré sa température la plus élevée depuis le début des relevés météorologiques.",
+    "dateSortie": "2025-01-19"
+  },
+  {
+    "titre": "Une ville autonome alimentée à 100% en énergie verte",
+    "paragraphe": "Une ville pilote en Suède fonctionne entièrement grâce aux énergies renouvelables.",
+    "dateSortie": "2025-03-22"
+  },
+  {
+    "titre": "Une percée dans la téléportation quantique",
+    "paragraphe": "Des physiciens ont réussi à téléporter des données quantiques sur une distance record.",
+    "dateSortie": "2025-02-14"
+  },
+  {
+    "titre": "Les océans abritent plus de plastique que de poissons",
+    "paragraphe": "Une nouvelle étude met en garde contre la pollution plastique qui dépasse désormais la biomasse des poissons.",
+    "dateSortie": "2025-04-09"
+  },
+  {
+    "titre": "Un vaccin universel contre la grippe en développement",
+    "paragraphe": "Des essais cliniques prometteurs indiquent qu’un vaccin unique pourrait protéger contre toutes les souches de grippe.",
+    "dateSortie": "2025-08-15"
+  },
+  {
+    "titre": "Les NFT dans l’éducation",
+    "paragraphe": "Des universités expérimentent les NFT pour certifier les diplômes et les parcours académiques.",
+    "dateSortie": "2025-07-01"
+  },
+  {
+    "titre": "Un superaliment cultivé sur Mars",
+    "paragraphe": "Des chercheurs ont réussi à faire pousser une plante nutritive dans un sol martien simulé.",
+    "dateSortie": "2025-05-27"
+  },
+  {
+    "titre": "Un drone livre un cœur pour une greffe",
+    "paragraphe": "Pour la première fois, un drone a transporté un organe destiné à une transplantation avec succès.",
+    "dateSortie": "2025-06-05"
+  },
+  {
+    "titre": "Des lunettes traduisent en temps réel",
+    "paragraphe": "Une nouvelle technologie permet à des lunettes intelligentes d'afficher des traductions en direct dans le champ de vision.",
+    "dateSortie": "2025-09-01"
+  }
+]

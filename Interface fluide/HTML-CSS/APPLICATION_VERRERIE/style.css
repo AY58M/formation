@@ -1,0 +1,118 @@
+header {
+    border: black solid;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: rgb(137, 231, 231);
+    text-align: center;
+    justify-content: center;
+    border-radius: 20px;
+
+}
+
+h4 {
+    color: crimson;
+}
+
+.gras {
+    font-weight: bolder;
+}
+
+body {
+
+    /* background: linear-gradient(to top, #2193b0, #6dd5ed); */
+
+    width: auto;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.sectionDonnees {
+    border: 2px solid black;
+    padding: 1rem;
+    background-color: rgb(160, 233, 245);
+    text-align: center;
+    padding-bottom: 2em;
+    border-radius: 20px;
+    margin-right: 2em;
+    background: lightskyblue;
+}
+
+.sectionDonnees1 {
+    border: black solid;
+    padding-top: 1em;
+    background-color: rgb(137, 231, 231);
+    text-align: center;
+    padding-bottom: 2em;
+    border-radius: 2rem;
+    margin: auto;
+}
+
+.sectionHumidite {
+    border: 2px solid black;
+    padding: 1rem;
+    background-color: rgb(160, 233, 245);
+    text-align: center;
+    padding-bottom: 2em;
+    border-radius: 20px;
+    margin-right: 2em;
+    background: lightskyblue;
+
+}
+
+.sectionHumidite1 {
+    border: black solid;
+    padding-top: 1em;
+    background-color: rgb(137, 231, 231);
+    text-align: center;
+    padding-bottom: 2em;
+    border-radius: 2rem;
+    margin: auto;
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+
+
+button {
+    border: 3px solid;
+    width: 200px;
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+button:hover {
+    background-color: crimson;
+}
+
+.couleur {
+    background-color: lightgrey;
+    color: black;
+    opacity: 20;
+}
+
+.bas-de-page {
+    margin-right: 2rem;
+    font-size: smaller;
+    background-color: rgb(160, 233, 245);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer {
+    border: black solid;
+    border-radius: 2rem;
+    background-color: rgb(137, 231, 231);
+
+}
+
+

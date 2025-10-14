@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exo form 4</title>
+</head>
+
+<body>
+    <h1>Exo form 4</h1>
+    <form method="post" action="">
+        <label for="nom">Nom</label>
+        <input type="text" name="nom" id="nom" placeholder="Entrez votre nom"><br>
+        <label for="mail">Email</label>
+        <input type="email" name="email" id="email" placeholder="Entrez votre email"><br>
+        <label for="datearrive">Date d'arrivée</label>
+        <input type="date" name="datearrive" id="datearrive"><br>
+        <label for="nuit">Nombre de nuits</label>
+        <input type="number" name="nuit" id="nuit" min="1" max="900"><br>
+        <label for="chambre">Type de chambre</label>
+        <select name="chambre">
+            <option value="simple">Simple</option>
+            <option value="double">Double</option>
+            <option value="suite">Suite</option>
+        </select><br>
+
+        <input type="submit" value="reserver">
+    </form>
+</body>
+
+</html>

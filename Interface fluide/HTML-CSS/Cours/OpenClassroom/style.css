@@ -1,0 +1,89 @@
+p,
+h1 {
+    color: rgb(16, 1, 185);
+
+}
+
+.important {
+    color: #a5b4fc;
+}
+
+body {
+
+    font-family: 'Manrope', sans-serif;
+    font-size: 1em;
+    background-color: #1f2039;
+}
+
+.entete,
+.pied-de-page {
+    background-color: white;
+}
+
+.ma-classe {
+    color: red;
+}
+
+.bleu {
+    color: blue;
+}
+
+.couleur {
+    color: black;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3.5em;
+}
+
+h2 {
+    color: #f9f8ff;
+}
+
+p,
+li {
+    font-size: 1.1em;
+    color: #f9f8ff;
+}
+
+em {
+    color: #a5b4fc;
+    font-style: normal;
+}
+
+a {
+    color: #242424;
+    text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.cta {
+    background: linear-gradient(#8e86b5, #acaeed);
+    color: white;
+    border-radius: 50px;
+}
+
+.cta:hover {
+  background: linear-gradient(#696484, #8788ba);
+  text-decoration: none;
+}
+
+.carre-contenu {
+    border-right: 1px solid #8e86b5;
+    border-bottom: 1px solid #8e86b5;
+}
+
+.lien-icone:hover {
+  opacity: 0.5;
+}

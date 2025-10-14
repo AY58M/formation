@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let legumes = ['carottes','salade','courgette','poivron'];
+        for(let l of legumes){
+            console.log(`legume : ${l}`);
+        }
+        legumes.push('Champignon','courge');
+        legumes.pop();
+        //supprime carotte
+        legumes.shift();
+        // Ajout 1er element du tableau
+        legumes.unshift('tomate');
+        let joueurs = prompt('Entrez les footballeurs');
+        let joueurstab = joueurs.split(',');
+        console.log(joueurstab);
+    </script>
+</body>
+</html>

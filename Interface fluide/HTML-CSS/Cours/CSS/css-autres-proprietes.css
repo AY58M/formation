@@ -1,0 +1,196 @@
+/* --------------------------------------------------------------------------------------------------- */
+/* Images - Couleurs et Backgrounds : */
+/* --------------------------------------------------------------------------------------------------- */
+
+
+
+
+.backgroundGreen {
+    background-color: #93e088;
+}
+
+.backgroundGreen2 {
+    background-color: #124701;
+}
+
+.backgroundRed {
+    background-color: rgb(176, 0, 0);
+}
+
+.imageEnBackgroundContain {
+    background-image: url(../../../images/bananna-wintour-sjq4zfNomFk-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.imageEnBackgroundCover {
+    background-image: url(../../../images/gustav-gullstrand-d6kSvT2xZQo-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gradientEnBackground {
+    background-image: linear-gradient(45deg, #ff7e5f, #feb47b);
+}
+
+.gradient3CouleursEnBackground {
+    background-image: linear-gradient(45deg, #ff7e5f, #feb47b, #000000);
+}
+
+.radialEnBackground {
+    background-image: radial-gradient(#124701, #93e088);
+}
+
+/* --------------------------------------------------------------------------------------------------- */
+/* Bordures */
+/* --------------------------------------------------------------------------------------------------- */
+
+.border1pxBlack {
+    border: 1px black solid;
+}
+
+.border1pxRed {
+    border: 1px rgb(173, 0, 0) solid;
+}
+
+.border3pxRed {
+    border: 3px rgb(173, 0, 0) solid;
+}
+
+.borderBottom {
+    border-bottom: 2px dashed rgb(82, 0, 0, 0.6);
+}
+
+.borderLeft {
+    border-left: 2px inset rgb(82, 0, 0, 0.6);
+}
+
+/* --------------------------------------------------------------------------------------------------- */
+/* Displays */
+/* --------------------------------------------------------------------------------------------------- */
+
+.block {
+    display: block;
+}
+
+.inline {
+    display: inline;
+}
+
+/* --------------------------------------------------------------------------------------------------- */
+/* Marges */
+/* --------------------------------------------------------------------------------------------------- */
+
+/* On peut donner les 4 valeurs des marges dans la propriété margin/padding en les séparant par un espace.
+Ordre des marges :
+valeur 1 = haut
+valeur 2 = droite
+valeur 3 = bas
+valeur 4 = gauche */
+.margin4Cotes {
+    margin: 4rem;
+}
+
+.padding4Cotes {
+    padding: 4rem;
+}
+
+/* Si 2 valeurs sont précisée, les marges s'appliqueront dans cet ordre :
+Valeur 1 = haut et bas
+Valeur 2 = gauche et droite */
+.margin-haut-bas {
+    margin: 2rem 0;
+}
+
+.margin-gauche-droite {
+    margin: 0 2rem;
+}
+
+.margin-gauche {
+    margin-left: 6rem;
+    /* ou : */
+    /* margin: 0 0 0 1rem; */
+}
+
+.margin-left-right-auto {
+    margin: auto;
+}
+
+.margin-bottom {
+    margin-bottom: 15rem;
+}
+
+/* --------------------------------------------------------------------------------------------------- */
+/* Dimensions */
+/* --------------------------------------------------------------------------------------------------- */
+
+.width500 {
+    width: 500px;
+}
+
+.height100 {
+    height: 100px;
+}
+
+.height200 {
+    height: 200px;
+}
+
+.size100x100 {
+    width: 100px;
+    height: 100px;
+}
+
+.size200x200 {
+    width: 200px;
+    height: 200px;
+}
+
+.size500x500 {
+    width: 500px;
+    height: 500px;
+}
+
+.cercle {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+
+.petitCercle {
+    width: 5px;
+    height: 5px;
+    border-radius: 100px;
+}
+
+.arrondi {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+/* --------------------------------------------------------------------------------------------------- */
+/* Overflow */
+/* --------------------------------------------------------------------------------------------------- */
+
+.overflowAuto {
+    overflow: auto;
+}
+
+.overflowHide {
+    overflow: hidden;
+}
+
+/* --------------------------------------------------------------------------------------------------- */
+/* Styles dynamiques : hover */
+/* --------------------------------------------------------------------------------------------------- */
+
+.hoverTexteEnGrasEtItalique:hover {
+    color: rgb(212, 212, 212);
+    font-weight: bold;
+    font-style: italic;
+}
+
+.activeTextEnBleu:active {
+    color: rgb(1, 21, 179);
+}

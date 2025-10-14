@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let tab = ['a', 'b', 'r', 'i', 'e', 'p', 'o'];
+        let voyelle = ['a', 'e', 'i', 'o', 'u', 'y'];
+        let s = 0;
+        for (let i = 0; i < tab.length; i++) {
+            if (voyelle.includes(tab[i])) {
+                s = s + 1;
+            }
+        }
+
+        /*for(let t of tab){
+        if(voyelle.includes(t)){
+        s++}
+        
+        }*/
+
+
+        console.log(s);
+        // p dans le tableau ?
+        $res = tab.includes('p');
+    </script>
+</body>
+
+</html>

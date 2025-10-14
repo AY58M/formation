@@ -1,0 +1,87 @@
+/*
+UTILISATION:
+Structure HTML recommandée:
+
+<header class="header">
+  <div class="nav-container">
+    <div class="logo">Mon Site</div>
+    <nav class="nav">
+      <a href="#" class="nav-link">Accueil</a>
+      <a href="#" class="nav-link">À propos</a>
+      <a href="#" class="nav-link">Services</a>
+      <a href="#" class="nav-link">Contact</a>
+    </nav>
+  </div>
+</header>
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+.titre {
+ font-size: 2rem;
+ font-weight: 600;
+ color: #2c3e50;
+ text-align: center;
+ margin: 2rem 0;
+ position: relative;
+}
+
+/* Header - Conteneur principal du header */
+.header {
+  background: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Container - Conteneur pour centrer le contenu */
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+/* Logo - Nom du site ou logo */
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Navigation - Menu de navigation */
+.nav {
+  display: flex;
+  gap: 2rem;
+}
+
+/* Liens de navigation - Liens du menu */
+.nav-link {
+  color: #666;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+/* Effet hover sur les liens */
+.nav-link:hover {
+  color: #3498db;
+}
+
+footer {
+
+  margin-top: 1rem ;
+}
+
+footer p {
+
+  text-align: center;
+
+}

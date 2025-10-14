@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let secondEpisode ='Un monde parfeit';
+        let thirdEpisode = 'Un monde sans technologie';
+        let firstEpisode = 'Un monde de maladie';
+        let episode = [firstEpisode, secondEpisode,thirdEpisode];
+        for(let e of episode){
+            console.log(e);
+        }
+        episode.push('Un monde de dinosaure','Un monde de jeune');
+        episode.unshift('Un monde selon Lenine');
+        let numberOfEpisode = episode.length;
+        episode.pop();
+    </script>
+</body>
+</html>

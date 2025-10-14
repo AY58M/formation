@@ -1,0 +1,128 @@
+/* 
+Syntaxe générale du css:
+
+nom_de_la_balise_ou_selecteur {
+    nom_de_la_proprieté_1: valeur;
+    nom_de_la_proprieté_2: valeur;
+    nom_de_la_proprieté_3: valeur;
+}
+
+*/
+
+/*
+....................... 
+1) Les sélecteurs simples
+.................;.......
+ */
+
+/* Sélection par le nom de la balise.(tu prends toutes les balises h1, et tu applique le style) */
+h1 {
+color: coral;
+}
+
+
+/* Sélection par ID (tu prends UN élément par son ID) */
+
+#titre1 {
+    text-decoration: underline;
+}
+
+/* Rappel ! le ID doits etre unique !!! */
+#titre2 {
+    color: brown;
+}
+
+/* sélection par class (tu prends tous les éléments qui ont la class "textLighter") */
+.textLighter {
+    font-weight: lighter;
+
+}
+
+li {
+font-weight: bold;
+}
+#elem1 {
+    color: green;
+}
+#elem2 {
+    color: red;
+}
+#elem3 {
+    color: purple;
+}
+#elem4 {
+    text-decoration: underline;
+}
+
+/* 
+.....................................
+2) les sélecteurs multiples
+.....................................
+*/
+
+/* tu selectionne tous les h4, + tous les p, + tous les li */
+
+h4,
+p,
+li {
+    font-style: italic;
+}
+
+/*
+................................
+3) les sélecteurs complexes
+................................
+*/
+
+
+/* Tu sélectionne tous les p qui sont à l'intérieur de toutes les balises article */
+article p {
+    font-style: normal;
+    background-color: rgb(233, 222, 222);
+}
+
+article h2, article h6 {
+    background-color: rgb(187, 182, 182);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+section article#article1 h2{
+    color: rgb(197, 28, 28);
+}
+
+section article#article2 h6.size32 {
+    font-size: 32pix;
+}
+
+article {
+    margin-top: 20pix;
+    margin-bottom: 20pix;
+}
+
+
+/*
+..............................
+3) le sélecteur universel
+..............................
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#margin {
+    border: 5px solid black;
+    /* margin-top: 100px; */
+    padding-top: 100px;
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,37 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.conteneur {
+    border: 1px solid black;
+    padding: 1rem 0;
+    width: 90%;
+    margin: 0.5rem auto;
+}
+
+.conteneur h2 {
+    text-align: center;
+    font-size: 40px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) { 
+    .conteneur h2 {
+        font-size: 30px;
+    }
+
+    .conteneur {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 400px) { 
+    .conteneur h2 {
+        font-size: 20px;
+    }
+}

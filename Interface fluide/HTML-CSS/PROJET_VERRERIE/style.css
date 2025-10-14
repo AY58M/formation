@@ -1,0 +1,179 @@
+nav ul {
+    display: flex;
+}
+
+.top-text{
+padding-top: 5px ;
+}
+
+
+
+body {
+    background-color: rgb(195, 249, 249);
+}
+
+.presentation {
+    padding-left: 15px;
+    padding-top: 0;
+    font-size: large;
+    text-align: justify;
+
+}
+
+
+
+h2,
+img {
+    padding-left: 20px;
+
+}
+
+h4,
+h3 {
+    padding-left: 15px;
+}
+
+
+.item2 {
+    background-color: rgb(211, 255, 157);
+    font-size: large;
+    text-align: justify;
+    margin: 20px;
+
+}
+
+.projet {
+    display: flex;
+    height: 300px;
+    margin: 50px auto;
+}
+
+header {
+    margin: 20px;
+    background-color: rgb(182, 239, 220);
+    display: flex;
+    justify-content: space-between;
+}
+
+header a:hover {
+    color: green;
+    transition: .2s all;
+}
+
+header li {
+    padding: 0 0.5rem;
+    list-style: none;
+}
+
+header li:hover a {
+    font-weight: bold;
+    font-size: 16px;
+    color: rgb(8, 104, 83);
+    border-bottom: 2px;
+    /*  */
+    transition: .2s all;
+}
+
+header a {
+    color: black;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+ul {
+    font-size: small;
+    margin-top: auto;
+}
+
+p {
+    font-size: 20px;
+}
+
+.projet {
+
+    display: flex;
+    width: auto;
+
+}
+.info{
+    margin: 20px;
+    font-size: 20px;
+}
+
+.police {
+    font-size: 20px;
+    padding: 20px;
+}
+
+.classe {
+    padding-top: 6px;
+    padding-right: 15px;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 30px;
+    font-size: 15px;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+.projet-img {
+    display: flex;
+    flex-direction: column;
+    display: block;
+    max-width: 40%;
+    max-height: 35%;
+
+}
+
+.projet-img {
+    max-height: fit-content;
+}
+
+main {
+    margin-bottom: 200px;
+    padding-right: 20px;
+}
+
+.bas-de-page {
+    display: flex;
+    justify-content: space-evenly;
+
+
+}
+
+/* .bas-de-page {
+    display: flex;
+    justify-content: space-evenly;
+
+
+} */
+
+.textLogo {
+    font-size: large;
+    align-content: flex-start;
+}
+
+.logoText {
+padding: 20px;
+    display: inline-flex;
+    gap: 20px;
+}
+
+.container,
+p {
+
+    display: flex;
+    align-self: flex-end;
+    /* overflow: auto; */
+    padding: 50px;
+}
+
+hr {
+    color: lch(84.75% 46.76 196.41);
+}

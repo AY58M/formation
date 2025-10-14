@@ -1,0 +1,32 @@
+table {
+    border-collapse: collapse;
+
+
+
+    border: 3px solid rgb(40, 46, 163);
+
+    width: 1000px;
+}
+
+td,
+th {
+    border: 3px solid rgb(40, 46, 163);
+    padding: 10px;
+}
+
+th {
+    background-color: blue;
+}
+
+tr {
+    background-color: rgb(216, 226, 245);
+    
+}
+
+tr:hover {
+    background-color: rgb(90, 10, 164);
+}
+
+.couleur {
+    background-color: rgb(255, 0, 0);
+}

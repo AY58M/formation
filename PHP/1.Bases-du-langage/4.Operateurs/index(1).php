@@ -51,3 +51,34 @@ echo $a + $b; // 13
  * | \`        |                     | \`            | \`\$a > 0 |   | \$b < 10\` | OU |
  * | `!`       | `!true`             | NON (inverse) |           |   |            |    |
  */
+
+
+
+// Les conditions multiples
+// && -> AND 
+// || -> OR
+
+$prenom = "Quentin" ;
+$age = 16 ;
+
+// manière de placer des conditions multiples plus facilement pour la relécture
+
+if (
+
+    ($prenom !="") &&
+    ($age<= 18)
+) {
+    echo "Validation OK";
+
+}
+
+else {
+    echo "Echec de validation";
+}
+
+// ! Rappel entre affectation et vérification
+
+// =  -> affectation ( s'utilise pour affecter une valeur à une variable ex: $nombre=12)
+// == -> vérification de valeurs (toujours dans les conditions)
+// === -> il vérifie le type de la variable en plus
+// différence : != || !==

@@ -1,0 +1,13 @@
+/* Cette classe ne peut pas être modifiée ! */
+.carre {
+    padding: 10px;
+    margin: 10px;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(153, 11, 11);
+}
+
+/* Ajoutez votre code CSS ici : */
+.strong {
+    font-weight: normal;
+}
