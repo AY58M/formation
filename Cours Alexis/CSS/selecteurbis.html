@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les selecteurs CSS</title>
+    <style>
+        p {
+            color: blue;
+        }
+
+        .maclasse {
+            color: aqua;
+        }
+
+        #monid {
+            color: red;
+        }
+
+        h2,
+        h3,
+        h4 {
+            font-size: 27px;
+        }
+
+        h2 em {
+            color: red;
+        }
+
+        div>em {
+            color: green;
+        }
+        a[title]{
+            text-decoration: none;
+            color: magenta;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Les selecteurs CSS</h1>
+    <p>Lorem, ipsum.</p>
+    <p class="maclasse">Lorem, ipsum dolor.</p>
+    <p id="monid">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+    <h2>mon titre 2</h2>
+    <h3>mon titre 3</h3>
+    <h4>mon titre 4</h4>
+    <h2>Super titre <em>en rouge</em></h2>
+    <p>coucou <strong>ça va</strong></p>
+    <div>
+        <em>Salut</em>
+        <strong>Hello</strong>
+    </div>
+
+    <p><a href="http://google.fr" title="lien google">Google.fr</a></p>
+
+</body>
+
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Nom Prénom</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f5f5f5;
+            color: #333;
+        }
+
+        .cv-container {
+            width: 80%;
+            max-width: 900px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 30px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 32px;
+            color: #222;
+        }
+
+        h2 {
+            font-size: 20px;
+            color: #0a71c2;
+            border-bottom: 2px solid #0a71c2;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+
+        .section {
+            margin-top: 20px;
+        }
+
+        .info {
+            margin: 5px 0;
+        }
+
+        .experience, .formation {
+            margin-bottom: 15px;
+        }
+
+        .experience h3, .formation h3 {
+            margin: 0;
+            font-size: 16px;
+            color: #333;
+        }
+
+        .date {
+            font-size: 14px;
+            color: #666;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin: 0;
+        }
+
+        /* ----- COMPÉTENCES EN DEUX COLONNES ----- */
+        .skills {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5px 20px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .skills li {
+            margin-bottom: 6px;
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+
+        <!-- Identité -->
+        <h1>Nom Prénom</h1>
+        <p class="info">📍 Ville, Pays</p>
+        <p class="info">📞 06 00 00 00 00</p>
+        <p class="info">📧 email@example.com</p>
+        <p class="info">🌐 www.portfolio.com</p>
+
+        <!-- Profil -->
+        <h2>Profil</h2>
+        <p>
+            Facteur expérimenté avec plusieurs années de pratique dans la collecte, le tri et la distribution du courrier et des colis. Organisé et autonome, je maîtrise l’ensemble des outils et procédures postales, y compris Factéo, et je suis prêt à reprendre rapidement une activité sur le terrain.
+        </p>
+
+        <!-- Compétences -->
+        <h2>Compétences</h2>
+        <ul class="skills">
+            <li>Tri du courrier et organisation du poste</li>
+            <li>Tri des colis</li>
+            <li>Organisation des tournées de distribution</li>
+            <li>Maîtrise de Factéo pour la gestion courrier/colis</li>
+            <li>Chargement et déchargement du courrier dans le camion</li>
+            <li>Distribution en vélo, voiture ou quad</li>
+            <li>Accueil et service clientèle au point courrier</li>
+            <li>Respect des procédures et sécurité des colis</li>
+            <li>Gestion de situations imprévues et adaptation rapide</li>
+            <li>Utilisation des véhicules électriques et équipements postaux</li>
+        </ul>
+
+        <!-- Expériences -->
+        <h2>Expériences professionnelles</h2>
+
+        <div class="experience">
+            <h3>Salarié en contrat d’insertion – Développement web</h3>
+            <p class="date">Plus récent</p>
+        </div>
+
+        <div class="experience">
+            <h3>Agent de tri et manutentionnaire CACES1 – CTLOG, Saint Martin de Crau</h3>
+            <p class="date">Après le contrat web</p>
+        </div>
+
+        <div class="experience">
+            <h3>Facteur (collecte et distribution en quad et voiture) – La Poste, Maussane les Alpilles</h3>
+            <p class="date">3 mois</p>
+        </div>
+
+        <div class="experience">
+            <h3>Facteur (collecte et distribution à vélo et voiture) – Service Courrier Colis La Poste, Arles</h3>
+            <p class="date">2 ans</p>
+        </div>
+
+        <div class="experience">
+            <h3>Permanence d'accueil – Point courrier, Village des Entreprises, La Poste, Arles</h3>
+            <p class="date">6 mois</p>
+        </div>
+
+        <div class="experience">
+            <h3>Facteur (collecte et distribution à vélo) – La Poste, Miramas</h3>
+            <p class="date">Plus ancien</p>
+        </div>
+
+        <div class="experience">
+            <h3>Réceptionniste stagiaire – Le Village Camarguais (Maeva), Arles</h3>
+        </div>
+
+        <div class="experience">
+            <h3>Contrôleur de qualité en agroalimentaire – Conserves France, Tarascon</h3>
+        </div>
+
+        <!-- Formations -->
+        <h2>Formations</h2>
+
+        <div class="formation">
+            <h3>Formation non diplômante en développement web et web mobile – Résurgence, Arles</h3>
+        </div>
+
+        <div class="formation">
+            <h3>Formation CACES 1A et 1B – EI Groupe, Miramas</h3>
+        </div>
+
+        <div class="formation">
+            <h3>Formation tri, distribution et collecte, habilitation véhicules électriques et Factéo – Service Courrier Colis, La Poste, Arles</h3>
+        </div>
+
+        <div class="formation">
+            <h3>Formation Réceptionniste en hôtellerie – GRETA, Arles</h3>
+        </div>
+
+        <div class="formation">
+            <h3>Diplôme en Informatique-Bureautique – ESGI, Oujda, Maroc</h3>
+        </div>
+
+        <div class="formation">
+            <h3>Diplôme en anglais – Oujda, Maroc</h3>
+        </div>
+
+        <div class="formation">
+            <h3>Baccalauréat en Sciences Expérimentales – Oujda, Maroc</h3>
+        </div>
+
+        <!-- Autres -->
+        <h2>Centres d’intérêt</h2>
+        <ul>
+            <li>Sports de plein air (vélo, marche)</li>
+            <li>Lecture et apprentissage continu</li>
+            <li>Service et relation clientèle</li>
+        </ul>
+
+    </div>
+</body>
+</html>

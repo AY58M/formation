@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Station Météo</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+
+<body>
+    <img class="moustique" src="../static/images/moustique_final.png" alt="moustique">
+    <header>
+        <div id="logo">
+            <a href="{{url_for('index')}}">
+                <img src="../static/images/verrie.webp" alt="Logo Verrerie" onerror="this.style.display='none'">
+            </a>
+        </div>
+
+        <div class="nav-container">
+            <ul id="nav">
+                <li><a href="#" class="active">Accueil</a></li>
+                <li><a href="{{url_for('apropos')}}">À propos</a></li>
+                <li><a href="{{url_for('docwiki')}}">Documentation</a></li>
+                <!-- <li><a href="#">Contact</a></li> -->
+            </ul>
+            <button id="themeToggle" class="theme-toggle" aria-label="Changer le thème">
+                <span class="theme-icon">🌙</span>
+            </button>
+        </div>
+
+        <div class="hamburger" id="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#">Accueil</a>
+            <a href="{{url_for('apropos')}}">À propos</a>
+            <a href="{{url_for('docwiki')}}">Documentation</a>
+            <!-- <a href="#">Contact</a> -->
+            <a href="#" class="mobile-theme-trigger">Mode Sombre</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="section-title">
+            <div class="section-main">🌿 La Station Verte</div>
+            <div class="section-desc">
+                <p>Système de surveillance météo en temps réel et Open source.
+                    Connecté localement au module Raspberry Pi à proximité.</p>
+            </div>
+        </div>
+
+        <div class="content-grid-accueil">
+
+            <div class="widget">
+                <div class="header">
+                    <div class="time">
+                        <span class="icon">🗓️</span>
+                        <span id="time">--</span>
+                    </div>
+                </div>
+
+                <div class="temp" id="temp">{{temperature}} °C</div>
+
+                <div class="data">
+                    <div class="item">
+                        <div class="label">
+                            Humidité
+                            <span class="info-icon">
+                                ?
+                                <span class="tooltip">Quantité de vapeur d'eau présente dans l'air, exprimée en
+                                    pourcentage. Plus le taux est élevé, plus l'air est saturé en humidité.</span>
+                            </span>
+                        </div>
+                        <div class="value" id="humidity">{{humidity}} %</div>
+                    </div>
+
+                    <div class="item">
+                        <div class="label">
+                            Point de rosée
+                            <span class="info-icon">
+                                ?
+                                <span class="tooltip">Température à laquelle l'air doit être refroidi pour que la vapeur
+                                    d'eau se condense en rosée. Indique le niveau d'humidité absolue.</span>
+                            </span>
+                        </div>
+                        <div class="value" id="dew">{{point_de_rosee}} °C</div>
+                    </div>
+
+                    <div class="item">
+                        <div class="label">
+                            Humidex
+                            <span class="info-icon">
+                                ?
+                                <span class="tooltip">Indice de confort qui combine la température et l'humidité pour
+                                    indiquer la température ressentie. Plus il est élevé, plus la chaleur est difficile
+                                    à supporter.</span>
+                            </span>
+                        </div>
+                        <div class="value" id="humidex">{{humidex}}</div>
+                    </div>
+
+                    <div class="item">
+                        <div class="label">
+                            Pression
+                            <span class="info-icon">
+                                ?
+                                <span class="tooltip">Pression atmosphérique mesurée en hectopascals (hPa). Une pression
+                                    élevée indique généralement du beau temps, tandis qu'une pression basse annonce
+                                    souvent du mauvais temps.</span>
+                            </span>
+                        </div>
+                        <div class="value" id="pressure">{{pression}} hPa</div>
+                    </div>
+                </div>
+
+                <div class="soil">
+                    <div class="soil-title">🌱 Humidité du sol - Sonde 1</div>
+                    <div class="soil-data">
+                        <div>
+                            <div class="label">Tension</div>
+                            <div class="value" id="voltage">{{voltage_sol}} V</div>
+                        </div>
+                        <div>
+                            <div class="label">Humidité</div>
+                            <div class="value" id="moisture">{{humidite_sol}} %</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="irrigation-control">
+                    <button class="irrigation-btn" id="irrigationBtn">
+                        <span>💧</span><span>Arrosage</span><span id="btnStatus">OFF</span>
+                    </button>
+                </div>
+
+                <!-- <div class="status" id="status">En attente de données...</div> -->
+            </div>
+
+            <div class="info-card">
+                <h3>Actualités et Évènements</h3>
+                <div class="actuBorder">
+                    <p>🌱 Et si coder permettait de se reconnecter à la nature ?</p>
+                </div>
+                <div class="actuBorder">
+                    <p>🗓️ 3 dates en juin-juillet-octobre pour fêter les (re)Trouvailles !</p>
+                </div>
+                <div class="actuBorder">
+                    <p>✨ Noël à Trinquetaille</p>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-style">
+            <p>La Verrerie, tiers-lieu culturel & citoyen, Arles</p>
+            <p>Graphisme et adaptation par <span>Résurgences</span></p>
+            <p>Copyright <span>OceanWP Theme by Nick</span> - Adapté par <span>Arles-Linux</span></p>
+        </div>
+        <img class="logo-footer" src="../static/images/arles-linux_log.webp" alt="Logo Arles Linux" height="100px">
+    </footer>
+
+    <script>
+        function updateTime() {
+            document.getElementById('time').textContent = new Date().toLocaleString('fr-FR');
+        }
+
+        setInterval(updateTime, 1000);
+        updateTime();
+
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobileMenu');
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.hamburger') && !e.target.closest('.mobile-menu')) {
+                hamburger.classList.remove('active');
+                mobileMenu.classList.remove('active');
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const infoIcons = document.querySelectorAll('.info-icon');
+
+            // Fonction utilitaire : détecte le mobile via largeur d’écran
+            function isMobile() {
+                return window.innerWidth < 769;
+            }
+
+            infoIcons.forEach(icon => {
+                icon.addEventListener('click', function (e) {
+                    if (!isMobile()) return; // Ne fait rien en desktop
+
+                    e.stopPropagation();
+
+                    // Fermer les autres
+                    infoIcons.forEach(i => {
+                        if (i !== icon) {
+                            i.classList.remove('active');
+                        }
+                    });
+
+                    // Toggle de celui cliqué
+                    icon.classList.toggle('active');
+                });
+            });
+
+            // Ferme tous les tooltips si clic ailleurs
+            document.addEventListener('click', function () {
+                infoIcons.forEach(icon => {
+                    icon.classList.remove('active');
+                });
+            });
+
+            // Optionnel : refermer au resize si on passe mobile → desktop
+            window.addEventListener('resize', () => {
+                if (!isMobile()) {
+                    infoIcons.forEach(icon => icon.classList.remove('active'));
+                }
+            });
+        });
+
+        // Script de gestion du thème
+        document.addEventListener("DOMContentLoaded", () => {
+            const themeToggle = document.getElementById("themeToggle");
+            const themeIcon = document.querySelector(".theme-icon");
+            let isDarkMode = localStorage.getItem("darkMode") === "true";
+
+            function applyTheme() {
+                if (isDarkMode) {
+                    document.body.classList.add("dark-mode");
+                    themeIcon.textContent = "☀️";
+                } else {
+                    document.body.classList.remove("dark-mode");
+                    themeIcon.textContent = "🌙";
+                }
+            }
+
+            themeToggle.addEventListener("click", () => {
+                isDarkMode = !isDarkMode;
+                localStorage.setItem("darkMode", isDarkMode);
+                applyTheme();
+            });
+
+            applyTheme();
+        });
+
+        // Script de gestion du thème en mobile
+        document.addEventListener("DOMContentLoaded", () => {
+            const mobileThemeToggle = document.querySelector(".mobile-theme-trigger");
+            let isDarkMode = localStorage.getItem("darkMode") === "true";
+
+            function applyTheme() {
+                if (isDarkMode) {
+                    document.body.classList.add("dark-mode");
+                } else {
+                    document.body.classList.remove("dark-mode");
+                }
+            }
+
+            mobileThemeToggle.addEventListener("click", () => {
+                isDarkMode = !isDarkMode;
+                localStorage.setItem("darkMode", isDarkMode);
+                applyTheme();
+            });
+
+            applyTheme();
+        });
+
+        // Ecrasement du moustique
+
+        // Fonction qui retourne une promesse résolue après un délai donné
+        function sleep(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+
+        async function respawn(event) {
+            // Supprimer l'image cliquée
+            event.target.remove();
+
+            await sleep(5000);
+
+            // Créer une nouvelle image
+            let tempImg = document.createElement('img');
+            tempImg.classList.add('moustique');
+            tempImg.src = "../static/images/moustique_final.png";
+            tempImg.addEventListener("click", respawn);
+
+            // L'ajouter au body
+            document.body.appendChild(tempImg);
+        }
+
+        // Ajouter l'event listener à l'image initiale
+        document.querySelector(".moustique").addEventListener("click", respawn);
+    </script>
+</body>
+
+</html>

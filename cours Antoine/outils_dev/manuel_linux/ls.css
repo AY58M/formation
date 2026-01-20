@@ -1,0 +1,17 @@
+.titre {
+background-color: rgb(66, 106, 207);
+width: 40%;
+color: white;
+border: 1px solid black;
+border-radius: 10px;
+padding: 10px;
+opacity: 50%;
+}
+
+
+
+
+body {
+    background-color: rgb(221, 243, 231);
+    padding: 20px;
+}

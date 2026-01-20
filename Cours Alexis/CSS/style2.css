@@ -1,0 +1,17 @@
+#mondiv1 {
+    background-color: green;
+
+}
+
+#mondiv2 {
+    color: red;
+    background-color: blue;
+
+}
+
+.monspan {
+    font-weight: bold;
+    text-decoration: underline;
+    color: black;
+
+}

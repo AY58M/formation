@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Responsive One‑Page with Anchors</title>
+    <meta name="description"
+        content="Simple responsive one-page boilerplate with anchor navigation and smooth scrolling." />
+    <link rel="stylesheet" href="style-one-page.css">
+
+</head>
+
+<body>
+    <section class="container">
+        <header>
+            <div class="nav-wrap">
+                <div class="brand">
+                    <a href="https://laverreriearles.fr/" target="_blank"><img src="images/Arles-Gnu-linux_2.0.png"
+                            alt="Arles-Gnu-linux"></a>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="#presentation">Présentation</a></li>
+                        <li><a href="#Le projet">Le projet</a></li>
+                        <li><a href="#Qui somme nous ?">Qui somme nous ?</a></li>
+                        <li><a href="#Low-tech">Low-tech</a></li>
+                        <li><a href="#Ecologie">Ecologie</a></li>
+                        <li><a href="#Contact">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <input id="nav-toggle" class="mobile-toggle" type="checkbox" />
+                <label for="nav-toggle" class="hamburger">☰</label>
+                <div class="mobile-menu">
+                    <a href="#presentation">Home</a>
+                    <a href="#Le projet">Le projet</a>
+                    <a href="#Qui somme nous ?">Qui somme nous ?</a>
+                    <a href="#Low-tech">Low-tech</a>
+                    <a href="#Ecologie">Ecologie</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <article id="presentation" class="hero">
+                <div class="card">
+
+                    <h2>Présentation</h2>
+                    <img src="images/la_verrerie.png" alt="La verrerie" width="50%">
+
+                    <h4>Cultivons du code au cœur du vivant</h4>
+                    <p class="lead">Sobriété numérique, technologie citoyenne, préservation de l’eau et animation
+                        éducative autour du
+                        libre.
+                        Jardin Libre est un projet qui a germé au sein du collectif Arles-GNU/Linux et qui a démarré
+                        durant
+                        l’été
+                        2025 en collaboration avec La Verrerie.
+                        Une station météo collecte des informations via des capteurs d’humidité, de température, de
+                        pression
+                        atmosphérique. Celle-ci est connectée à un ordinateur miniature et peu coûteux, le Raspberry Pi
+                        qui
+                        fonctionne sous le système d'exploitation Linux.
+                        Cette installation est autonome en énergie grâce au panneau solaire et sa connexion locale au
+                        WI-FI.
+                        Découvrez également le “Wiki”, une documentation participative hébergée sur le Raspberry Pi,
+                        accessible
+                        via
+                        des QR codes placés dans le jardin.
+                        Jardin libre est le résultat d’ateliers de co-construction numérique (apprentissage du code
+                        Python,
+                        html,
+                        CSS, Javascript) à destination de tous, des collégiens aux séniors.
+                    </p>
+                    <!-- <p style="margin-top:1rem"><a class="btn" href="#services">See services</a></p> -->
+                </div>
+            </article>
+            <article id="Le projet" class="hero">
+                <div class="card">
+                    <h2>Le projet du Jardin Libre</h2>
+                    <img src="images/image1.png" alt="" height="" width="50%">
+
+                    <p class="lead">Se reconnecter à la nature: <br>
+                        Et si un jardin pouvait nous apprendre à coder, à coopérer, et à préserver l’eau?
+                        À Arles, dans le tiers-lieu La Verrerie, nous avons décidé de faire pousser du libre… au sens
+                        propre
+                        comme au figuré. <br>
+                        🌱 Et si coder permettait de se reconnecter à la nature ?
+                        Dans ce projet ludique et engagé, les participant·es fabriquent leur propre station de jardin
+                        connectée
+                        à partir d’un Raspberry Pi : température, humidité, lumière, arrosage… tout est mesuré pour
+                        mieux
+                        comprendre son environnement 🌦️
+                    </p>
+                </div>
+            </article>
+            <article id="Qui somme nous ?" class="hero">
+                <div class="card">
+                    <h2>Qui somme nous ?</h2>
+                    <img src="images/image3.png" alt="" height="400px" width="400px">
+
+                    <h3>Arles GNU/Linux</h3>
+                    <p class="lead">Nous sommes un groupe d’utilisateurs des systèmes GNU/Linux. <br>
+                        L’association a pour objet la promotion des systèmes d’exploitation (OS) basés sur le noyau
+                        Linux et de
+                        faire découvrir les différents aspects des logiciels libres. <br>
+                        Nous vous proposons de découvrir les fondements et la raison d’être des logiciels libres.
+                        Linux est depuis longtemps une alternative crédible aux systèmes d’exploitation propriétaires
+                        dans le
+                        domaine des serveurs, et tend à le devenir sur le segment des systèmes d’exploitation pour poste
+                        de
+                        travail. <br>
+                        Nous sommes basés à Arles (comme notre nom l’indique). Notre siège social est à la Maison de la
+                        Vie
+                        Associative d’Arles. <br>
+                        Nous avons le projet de proposer des ateliers d’initiation, de découverte ou de spécialisation
+                        dans
+                        l’utilisation de logiciels libres. <br>
+                        Dans ce cadre nous développons une application d’irrigation intelligente et responsable.</p>
+                </div>
+            </article>
+            <article id="Low-tech" class="hero">
+                <div class="card">
+                    <h2>Un exemple de développement low-tech</h2>
+                    <img src="images/low_tech.png" alt="low-tech" height="300px" width="400px">
+
+                    <p class="lead"> Qu’est-ce que la low-tech ? <br>
+                        La low-tech est une manière de faire les choses avec simplicité, sans gaspillage.
+                        Pas besoin d’objets compliqués ou à la mode.
+                        Ce sont, le plus souvent des outils utiles, le plus souvent faciles à faire soi-même, à
+                        comprendre,
+                        qu’on peut réparer soi-même. <br>
+                        strÀ quoi ça sert ? <br>
+                        La low-tech permet de répondre à nos besoins tout en respectant au mieux la planète. <br>
+                        On peut utiliser la low-tech pour : <br>
+                        • Faire de l’énergie (par exemple avec le soleil) <br>
+                        • Mieux utiliser les ressources <br>
+                        • Réduire les déchets <br>
+                        • Se loger, se déplacer, se soigner, se laver… <br>
+                        • Et arroser son jardin de manière éco-ludico-responsable. <br>
+                        En résumé : faire ce qu’on fait tous les jours, mais de façon plus simple, plus économique et
+                        plus
+                        écologique. <br>
+                        Pourquoi est-ce important ? <br>
+                        Parce que ça répond à nos vrais besoins, pas qu’à des envies inutiles et nous rend plus
+                        autonomes.
+                        C’est bon pour nous… et pour la planète !</p>
+                </div>
+            </article>
+            <article id="Ecologie" class="hero">
+                <div class="card">
+                    <h2>Autonomie grâce à l’énergie solaire🌿</h2>
+                    <img src="images/Imagec-ollée.png" alt="" height="60%" width="40%">
+
+                    <p class="lead">
+                        Une petite station pilotée par un Raspberry pi alimenté à l’énergie solaire maintenu en tension
+                        par une petite batterie. Quand la terre demande, la technologie s’exécute quelle que soit
+                        l’heure. <br>
+                        L’occasion d’apprendre à coder en Python, s’initier à l’électronique, explorer les données météo
+                        et
+                        découvrir l’univers des logiciels libres 💡
+
+                        💻🌿 Une aventure entre fablab, écologie et numérique éthique à ne pas manquer !
+                        👤 Par l’association Arles-GNU/Linux
+                    </p>
+                </div>
+            </article>
+
+        </main>
+        <footer>
+            <p>© <span id="year"></span> Projet du Jardin libre • Arles-Gnu-linux et La Verrerie, Arles</p>
+        </footer>
+    </section>
+    
+    <aside>
+        <div class="section-inner" id="Contact">
+            <div class="cards">
+                <div class="card">
+                    <h3>Lieu : </h3>
+                    <p class="coordonnee">La Verrerie, 4, place Léopold Moulias 13200 ARLES</p>
+                </div>
+                <div class="card">
+                    <h3>Téléphone : </h3>
+                    <p class="coordonnee">06 56 67 49 21</p>
+                </div>
+                <div class="card">
+                    <h3>Email : </h3>
+                    <p class="coordonnee">numerique@laverreriearles.fr</p>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        document.querySelectorAll('.mobile-menu a').forEach(a => a.addEventListener('click', () => {
+            console.log('clicked');
+            const cb = document.getElementById('nav-toggle'); if (cb) cb.checked = false;
+        }));
+    </script>
+</body>
+
+</html>

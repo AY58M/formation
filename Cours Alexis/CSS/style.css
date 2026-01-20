@@ -1,0 +1,25 @@
+body {
+    background-color: aqua;
+}
+
+h1 {
+    color: red;
+}
+
+p {
+    color: blue;
+}
+
+h2 {
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#monid {
+    color: yellow;
+}
+
+.maclasse {
+    color: magenta;
+}

@@ -1,0 +1,58 @@
+body {
+    background-image: url(images/pexels-scottwebb-1029624.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color:  #3a3515;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+header {
+    background: rgba(52, 104, 119, 0.8);
+    border-radius: 30px;
+    padding: 20px;
+    list-style: none;
+    display: flex;
+}
+
+ul {
+    border-radius: 20px;
+    margin: 0%;
+    list-style: none;
+    display: flex;
+}
+
+h1,
+h2 {
+    color: #3a3515;
+}
+
+h1 {
+    font-size: 60px;
+    margin-bottom: 0;
+        margin-top: 80px;
+
+}
+
+h2 {
+    background: linear-gradient(90deg, #4facfe, #00f2fe);
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 30px;
+    
+}
+
+li {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+a {
+    color: rgb(210, 235, 245);
+    text-decoration: none;
+}
+
+.mon_parcour {
+    margin-right: auto;
+}

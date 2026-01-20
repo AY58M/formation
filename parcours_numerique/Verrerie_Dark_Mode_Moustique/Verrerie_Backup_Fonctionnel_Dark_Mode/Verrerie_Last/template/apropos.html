@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+
+</head>
+
+<body>
+    <img class="moustique" src="../static/images/moustique_final.png" alt="moustique">
+    <header>
+        <div id="logo">
+            <a href="{{url_for('index')}}">
+                <div class="logo"><img src="../static/images/verrie.webp" alt="Logo de la Verrerie"></div>
+            </a>
+        </div>
+
+        <div class="nav-container">
+            <ul id="nav">
+                <li><a href="{{url_for('accueil')}}">Accueil</a></li>
+                <li><a href="#" class="active">À propos</a></li>
+                <li><a href="{{url_for('docwiki')}}">Documentation</a></li>
+                <!-- <li><a href="#">Contact</a></li> -->
+            </ul>      
+
+            <button id="themeToggle" class="theme-toggle" aria-label="Changer le thème">
+                <span class="theme-icon">🌙</span>
+            </button>
+        </div>
+
+        <div class="hamburger" id="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="{{url_for('accueil')}}">Accueil</a>
+            <a href="#" class="active">À propos</a>
+            <a href="{{url_for('docwiki')}}">Documentation</a>
+            <!-- <a href="#">Contact</a> -->
+            <a href="#" class="mobile-theme-trigger">Mode Sombre</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="section-title">
+            <div class="section-main">🤝 À propos du projet et de ses partenaires</div>
+            <div class="section-desc">
+                <p>Découvrez les structures qui ont collaboré à la création du Wiki et du projet Jardin Libre,
+                    alliance entre le numérique libre et l’écologie citoyenne.</p>
+            </div>
+        </div>
+
+        <div class="content-grid">
+
+            <!-- Bloc 1 : Jardin Libre -->
+            <div class="widget">
+                <div class="header">
+                    <h2 style="color:#37be8c;">Jardin Libre</h2>
+                </div>
+
+                <div class="info-content">
+                    <p><strong>Jardin Libre</strong> est un projet issu du collectif <strong>Arles-GNU/Linux</strong>,
+                        né à l’été 2025 en collaboration avec le tiers-lieu <strong>La Verrerie</strong>.</p>
+
+                    <p>Le projet établit un <em>lien entre le naturel et le numérique</em> :
+                        il vise à concevoir une <strong>station météo autonome</strong> reposant sur
+                        l’<strong>énergie solaire</strong> et les <strong>logiciels libres</strong>.</p>
+
+                    <p>Il s’appuie sur trois piliers fondamentaux :</p>
+                    <ul style="margin-left:1rem;">
+                        <li>🌐 Le <strong>numérique libre</strong></li>
+                        <li>🌿 L’<strong>écologie</strong></li>
+                        <li>⚡ La <strong>sobriété énergétique</strong></li>
+                    </ul>
+
+                    <p>Cette initiative illustre une démarche de <strong>technologie citoyenne</strong>,
+                        accessible à tous et tournée vers la compréhension des systèmes vivants
+                        et des outils numériques durables.</p>
+
+                    <p>Nous tenons à remercier pour leur participation au codage ou à la documentation : </p>
+                    <div class="equipe">
+                        <ul style="margin-top:6px; margin-left:1rem;">
+                            <li>Françoise Lacotte</li>
+                            <li>Léa Cornier-Jerez</li>
+                            <li>Marine Buu</li>
+                            <li>Jennifer Thienpont</li>
+                            <li>Garrance Nové-Josserand</li>
+                            <li>Saman Tutillo</li>
+                                        
+                        </ul>
+                        <ul style="margin-top:6px; margin-left:1rem;">                            
+                            <li>Jean-Luc Vernier</li>
+                            <li>Olivier Debaret</li>
+                            <li>Les équipes de Résurgences</li>
+                            <li>Les adhérents de l'association Arles GNU Linux</li>
+                            <li>Jimmy Young</li>                            
+                            <li>Olivier Carpels</li>  
+                        </ul>
+                    </div>                
+                </div>
+            </div>           
+
+            <!-- Bloc 2 : Arles GNU Linux -->
+            <div class="widget">
+                <div class="header">
+                    <h2 style="color:#37be8c;">Arles GNU Linux</h2>
+                </div>
+
+                <div class="info-content">
+                    <p><strong>Arles GNU Linux</strong> a pour mission principale de faire découvrir,
+                        promouvoir et accompagner l’usage des logiciels libres et du système d’exploitation Linux
+                        auprès du grand public. L’association s’adresse aussi bien aux débutants qu’aux utilisateurs
+                        expérimentés, en proposant des ressources pédagogiques, des ateliers d’initiation et des
+                        formations
+                        thématiques..</p>
+
+                    <p>L’association organise régulièrement :</p>
+
+                    <ul style="margin-left:1rem;">
+                        <li>des ateliers pratiques pour installer et utiliser des distributions Linux ;</li>
+                        <li>des séances d’entraide et de dépannage ouvertes à tous ;</li>
+                        <li>des conférences sur les enjeux du numérique libre et de la souveraineté technologique ;</li>
+                        <li>des rencontres conviviales pour favoriser le partage de connaissances entre passionnés.</li>
+                    </ul>
+
+                    <p>Elle met également à disposition sur son site web des <strong>tutoriels, guides et
+                    outils</strong> pour accompagner les utilisateurs dans leur apprentissage.</p>
+
+                    <p>
+                        Arles GNU Linux défend les valeurs fondamentales du <span class="highlight">logiciel libre</span> :
+                    </p>
+
+                    <ul style="margin-left:1rem;">
+                        <li>la liberté d’utiliser, de copier, de modifier et de redistribuer les programmes ;</li>
+                        <li>la transparence du code ;</li>
+                        <li>la collaboration communautaire ;</li>
+                        <li>le partage des savoirs au service de l’intérêt général.</li>
+                    </ul>
+
+                    <p>
+                        À travers ses actions, l’association cherche à sensibiliser le public aux enjeux de la
+                        <strong>sécurité numérique</strong>, de la <strong>protection des données personnelles</strong>
+                        et de la <strong>souveraineté technologique</strong>.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Bloc 3 : Résurgences -->
+            <div class="widget">
+                <div class="header">
+                    <h2>Résurgences</h2>
+                </div>
+
+                <div class="doc-content">
+                    <p><strong>Résurgences</strong> est une structure d’action sociale créée il y a plus de 25 ans,
+                        basée à <strong>Arles</strong> et <strong>Marseille</strong>. Elle accompagne des personnes vers
+                        l’emploi à travers des <strong>chantiers d’insertion par le numérique</strong>.</p>
+
+                    <p>Ses valeurs fondamentales sont : <em>l’autonomie</em>, <em>l’émancipation</em> et
+                        <em>l’apprentissage tout au long de la vie</em>. Résurgences s’inscrit dans un réseau
+                        d’acteurs engagés pour l’action publique et la recherche autour de la citoyenneté numérique.
+                    </p>
+
+                    <p class="encadrement"><strong>Leurs équipes : </strong></p>
+
+                    <div class="equipe-resu">
+                        <div style="margin-top:1rem;">
+                            <strong>Web-documentalistes</strong>
+                            <ul style="margin-top:6px; margin-left:1rem;">
+                                <li>Emilie Ballif</li>
+                                <li>Valérien Gorjao</li>
+                                <li>Marouane El Arrass</li>
+                                <li>Félicia Maiorschi</li>
+                                <li>Mélinda Radix</li>
+                                <li>Lauriane André</li>
+                            </ul>
+                        </div>
+
+                        <div style="margin-top:1rem;">
+                            <strong>Web-développeurs</strong>
+                            <ul style="margin-top:6px; margin-left:1rem;">
+                                <li>Florian Badenes</li>
+                                <li>Stéphane R.</li>
+                                <li>Laurent Blanchard</li>
+                                <li>Mohammed Elfellah</li>
+                                <li>Jérémy Vernagallo</li>
+                                <li>Xavier Dubocage</li>
+                                <li>Kévin D.</li>
+                                <li>Antoine Karoubi</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-style">
+            <p>La Verrerie, tiers-lieu culturel & citoyen, Arles</p>
+            <p>Graphisme et adaptation par <span>Résurgences</span></p>
+            <p>Copyright <span>OceanWP Theme by Nick</span> - Adapté par <span>Arles-Linux</span></p>
+        </div>
+        <img class="logo-footer" src="../static/images/arles-linux_log.webp" alt="Logo Arles Linux" height="100px">
+    </footer>
+
+    <script>
+        // Gestion du menu mobile
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        hamburger.addEventListener('click', (e) => {
+            e.stopPropagation();
+            hamburger.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.hamburger') && !e.target.closest('.mobile-menu')) {
+                hamburger.classList.remove('active');
+                mobileMenu.classList.remove('active');
+            }
+        });
+
+        // Script de gestion du thème
+        document.addEventListener("DOMContentLoaded", () => {
+        const themeToggle = document.getElementById("themeToggle");
+        const themeIcon = document.querySelector(".theme-icon");
+        let isDarkMode = localStorage.getItem("darkMode") === "true";
+
+        function applyTheme() {
+          if (isDarkMode) {
+            document.body.classList.add("dark-mode");
+            themeIcon.textContent = "☀️";
+          } else {
+            document.body.classList.remove("dark-mode");
+            themeIcon.textContent = "🌙";
+          }
+        }
+
+        themeToggle.addEventListener("click", () => {
+          isDarkMode = !isDarkMode;
+          localStorage.setItem("darkMode", isDarkMode);
+          applyTheme();
+        });
+
+        applyTheme();
+      });
+
+      // Script de gestion du thème en mobile
+        document.addEventListener("DOMContentLoaded", () => {
+        const mobileThemeToggle = document.querySelector(".mobile-theme-trigger");       
+        let isDarkMode = localStorage.getItem("darkMode") === "true";
+        
+        function applyTheme() {
+            if (isDarkMode) {
+                document.body.classList.add("dark-mode");                
+            } else {
+                document.body.classList.remove("dark-mode");                
+            }
+        }
+
+        mobileThemeToggle.addEventListener("click", () => {
+          isDarkMode = !isDarkMode;
+          localStorage.setItem("darkMode", isDarkMode);
+          applyTheme();
+        });
+
+        applyTheme();
+      });
+
+      // Ecrasement du moustique
+      let moustique = document.querySelector(".moustique");
+      moustique.addEventListener("click", () => {
+          moustique.remove();
+        });
+    </script>
+</body>
+
+</html>

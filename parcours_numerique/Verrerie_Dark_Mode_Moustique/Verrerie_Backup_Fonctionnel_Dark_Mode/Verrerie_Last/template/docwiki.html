@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation Station Météo</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+
+<body>
+    <img class="moustique" src="../static/images/moustique_final.png" alt="moustique">
+    <header>
+        <div id="logo">
+            <a href="{{url_for('index')}}">
+                <div class="logo"><img src="../static/images/verrie.webp" alt="Logo de la Verrerie"></div>
+            </a>
+        </div>
+        
+        <div class="nav-container">
+            <ul id="nav">
+                <li><a href="{{url_for('accueil')}}">Accueil</a></li>
+                <li><a href="{{url_for('apropos')}}">À propos</a></li>
+                <li><a href="#" class="active">Documentation</a></li>            
+                <!-- <li><a href="#">Contact</a></li> -->
+                
+            </ul>
+            <button id="themeToggle" class="theme-toggle" aria-label="Changer le thème">
+                <span class="theme-icon">🌙</span>
+            </button>           
+        </div>
+
+        <div class="hamburger" id="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="{{url_for('accueil')}}">Accueil</a>
+            <a href="{{url_for('apropos')}}">À propos</a>
+            <a href="#" class="active">Documentation</a>
+            <a href="#" class="mobile-theme-trigger">Mode Sombre</a>
+            <!-- <a href="#">Contact</a> -->
+        </div>
+    </header>
+
+    <main>
+
+        <div class="section-title">
+            <div class="section-main">📘 Documentation du projet "Jardin Libre"</div>
+            <div class="section-desc">
+                <p>Découvrez la philosophie, les aspects techniques et la démarche éducative derrière le projet
+Jardin Libre et sa station météo open source.</p>
+            </div>
+        </div>
+
+        <div class="content-grid-docs">
+            <div class="widget">
+                <div class="header">
+                    <h2>Présentation du projet</h2>
+                </div>
+                <div class="doc-content">
+                    <p><strong>🌿 Jardin Libre</strong> : Cultivons du code au cœur du vivant.</p>
+
+                    <p>Le projet <strong>Jardin Libre</strong> promeut la <em>sobriété numérique</em>, la <em>technologie citoyenne</em>, 
+                    la <em>préservation de l’eau</em> et l’<em>apprentissage du code libre</em> à travers des animations éducatives.</p>
+
+                    <p>Ce projet est né au sein du collectif <strong>Arles-GNU/Linux</strong> et a vu le jour à l’été 2025 
+                    en partenariat avec <strong>La Verrerie</strong>.</p>
+
+                    <p>Une station météo collecte des données locales via des capteurs de température, d’humidité, 
+                    de pression atmosphérique et d’humidité du sol. Ces informations sont traitées par un 
+                    <strong>Raspberry Pi</strong>, un ordinateur miniature à faible consommation d’énergie fonctionnant sous 
+                    <strong>GNU/Linux</strong>.</p>
+
+                    <p>Cette installation est <strong>autonome en énergie</strong> grâce à un <strong>panneau solaire</strong> et 
+                    se connecte en <strong>réseau local Wi-Fi</strong> pour la consultation des données météo.</p>
+
+                    <p>💡 Le <strong>Wiki</strong> associé au projet constitue une <em>documentation participative</em> 
+                    hébergée directement sur le Raspberry Pi, accessible via des <strong>QR codes</strong> placés dans le jardin.</p>
+
+                    <p>Le projet est le fruit d’<strong>ateliers de co-construction numérique</strong> 
+                    (initiation au Python, HTML, CSS, JavaScript) ouverts à tous — collégiens, 
+                    étudiants, adultes et séniors.</p>
+                </div>
+            </div>
+            
+            <div class="GalleryJardin">
+                <div class="header">
+                    <h2>Galerie photo du jardin</h2>
+                </div>
+                
+                <div class="photoLayout">
+                    <img src="../static/images/jardin.webp" alt="Photo du jardin">
+                    <img src="../static/images/hutte.webp" alt="Photo de la hutte">
+                    <img src="../static/images/panneau.webp" alt="Photo du panneau">
+    
+                    <img src="../static/images/ruches.webp" alt="Photo des ruches">
+                    <img src="../static/images/grand_four.webp" alt="Photo du grand four">
+                    <img src="../static/images/abri.webp" alt="Photo de l'abri">
+                </div>
+            </div>
+
+            <div class="info-card">
+                <h3>📎 Liens utiles</h3>
+                <div class="actuBorder">
+                    <p>🧠 <a href="http://10.136.1.110/wiki">Accéder au Wiki local</a></p>
+                </div>
+                <div class="actuBorder">
+                    <p>📡 <a href="{{url_for('accueil')}}">Données temps réel</a></p>
+                </div>
+                <div class="actuBorder">
+                    <p>💧 <a href="#">Guide de l’irrigation intelligente</a></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-style">
+            <p>La Verrerie, tiers-lieu culturel & citoyen, Arles</p>
+            <p>Graphisme et adaptation par <span>Résurgences</span></p>
+            <p>Copyright <span>OceanWP Theme by Nick</span> - Adapté par <span>Arles-Linux</span></p>
+        </div>
+        <img class="logo-footer" src="../static/images/arles-linux_log.webp" alt="logo-arles-linux" height="100px">
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobileMenu');
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.hamburger') && !e.target.closest('.mobile-menu')) {
+                hamburger.classList.remove('active');
+                mobileMenu.classList.remove('active');
+            }
+        });
+        
+
+        // Script de gestion du thème
+        document.addEventListener("DOMContentLoaded", () => {
+        const themeToggle = document.getElementById("themeToggle");
+        const themeIcon = document.querySelector(".theme-icon");
+        let isDarkMode = localStorage.getItem("darkMode") === "true";
+
+        function applyTheme() {
+          if (isDarkMode) {
+            document.body.classList.add("dark-mode");
+            themeIcon.textContent = "☀️";
+          } else {
+            document.body.classList.remove("dark-mode");
+            themeIcon.textContent = "🌙";
+          }
+        }
+
+        themeToggle.addEventListener("click", () => {
+          isDarkMode = !isDarkMode;
+          localStorage.setItem("darkMode", isDarkMode);
+          applyTheme();
+        });
+
+        applyTheme();
+        });
+
+        // Script de gestion du thème en mobile
+        document.addEventListener("DOMContentLoaded", () => {
+        const mobileThemeToggle = document.querySelector(".mobile-theme-trigger");       
+        let isDarkMode = localStorage.getItem("darkMode") === "true";
+        
+        function applyTheme() {
+            if (isDarkMode) {
+                document.body.classList.add("dark-mode");                
+            } else {
+                document.body.classList.remove("dark-mode");                
+            }
+        }
+
+        mobileThemeToggle.addEventListener("click", () => {
+          isDarkMode = !isDarkMode;
+          localStorage.setItem("darkMode", isDarkMode);
+          applyTheme();
+        });
+
+        applyTheme();
+      });
+
+      // Ecrasement du moustique
+      let moustique = document.querySelector(".moustique");
+      moustique.addEventListener("click", () => {
+          moustique.remove();
+        });
+    </script>
+</body>
+</html>
