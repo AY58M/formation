@@ -15,7 +15,7 @@
     </form>
 
     <?php
-    
+
     if (isset($_POST['grade'])) {
 
         $grade = $_POST['grade'];
@@ -40,12 +40,16 @@
                 echo "très mauvais";
                 break;
             default:
-                echo "Erreur";
+                echo "Note invalide";
                 break;
         }
     }
 
     ?>
+
+</body>
+
+</html>
 
 </body>
 

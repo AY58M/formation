@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @media (max-width:600px) {
+            ul {
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: start;
+            }
+        }
+
+        @media (min-width:601px) {
+            ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: start;
+            }
+        }
+
+        /* Solution alternative : */
+        
+        /* @media (min-width : 600px) {
+            ul {
+                display: flex;
+                justify-content: space-around;
+
+            }
+        } */
+    </style>
+</head>
+
+<body>
+    <h1>Exercice 4: </h1>
+    <h2>Transformer un menu horizontal en menu vertical sur mobile</h2>
+
+    <ul>
+        <li><a href="https://google.fr">Google</a></li>
+        <li><a href="../CSS/responsive-1.html">Responsive 1</a></li>
+        <li><a href="https://lemonde.fr" target="_blank">Le monde</a></li>
+        <li><a href="../CSS/responsive-2.html" target="_blank">Responsive 2</a></li>
+    </ul>
+</body>
+
+</html>

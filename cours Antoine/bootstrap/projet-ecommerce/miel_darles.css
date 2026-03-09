@@ -1,0 +1,58 @@
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35),
+            rgba(0, 0, 0, 0.35)), url(images/bol-miel-table-bois.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-bottom: 80px;
+}
+
+.bouton {
+    background-color: #f4a300;
+    color: white;
+    border: none;
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 50px;
+
+}
+
+.bouton:hover {
+    background-color: #d98c00;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+}
+
+.click {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bienvenue {
+    color: whitesmoke;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 40px;
+}
+
+p {
+    font-size: 20px;
+}
+
+h5,
+p {
+    color: whitesmoke;
+}
+
+.bienvenue h1 {
+    font-size: 3rem;
+}

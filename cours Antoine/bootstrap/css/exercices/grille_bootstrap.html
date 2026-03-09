@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <style>
+        div,
+        section,
+        article,
+        aside,
+        .hauteur {
+            min-height: 80px;
+        }
+
+        .bg-beige {
+            background-color: #e9d088
+        }
+
+        .padd {
+            margin-top: 50px;
+        }
+
+        .text {
+            align-content: center;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container col-6 offset-3">
+        <h2>Grille Bootstrap</h2><br>
+        <h4>Affichage de 4 colonnes</h4><br>
+        <div class="row">
+            <div class="col-12 col-md-3 "><strong>1ere colonne</strong> <br> Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Necessitatibus quas nobis incidunt quis? Laboriosam placeat eveniet atque distinctio
+                voluptate at?</div>
+            <div class="col-12 col-md-3 "><strong>2e colonne</strong> <br>Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Necessitatibus quas nobis incidunt quis? Laboriosam placeat eveniet atque distinctio
+                voluptate at?</div>
+            <div class="col-12 col-md-3 "><strong>3e colonne</strong> <br>Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Necessitatibus quas nobis incidunt quis? Laboriosam placeat eveniet atque distinctio
+                voluptate at?</div>
+            <div class="col-12 col-md-3 "><strong>4e colonne</strong> <br>Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Necessitatibus quas nobis incidunt quis? Laboriosam placeat eveniet atque distinctio
+                voluptate at?</div>
+        </div><br>
+    </div><br>
+
+
+    <div class="container col-6 offset-3">
+        <h4>Affichage de 3 colonnes</h4><br>
+        <div class="row">
+            <div class="col-12 col-md-4"><strong>1ere colonne</strong> <br>Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Necessitatibus quas nobis incidunt quis? Laboriosam placeat eveniet atque distinctio
+                voluptate at?</div>
+            <div class="col-12 col-md-4"><strong>2e colonne</strong> <br>Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Necessitatibus quas nobis incidunt quis? Laboriosam placeat eveniet atque distinctio
+                voluptate at?</div>
+            <div class="col-12 col-md-4"><strong>3e colonne</strong> <br>Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Necessitatibus quas nobis incidunt quis? Laboriosam placeat eveniet atque distinctio
+                voluptate at?</div>
+        </div><br>
+    </div><br>
+
+
+    <div class="container">
+        <h4>Affichage de 2 colonnes</h4><br>
+        <div class="row">
+            <div class="col-12 col-md-6"><strong>1ere colonne</strong> <br> Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Necessitatibus quas nobis incidunt quis? Laboriosam placeat eveniet atque distinctio
+                voluptate at?</div>
+            <div class="col-12 col-md-6"><strong>2e colonne</strong> <br>Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Necessitatibus quas nobis incidunt quis? Laboriosam placeat eveniet atque distinctio
+                voluptate at?</div>
+        </div><br>
+    </div><br>
+
+    <div class="container">
+        <h4>Affichage de 2 colonnes égales avec séparation</h4><br>
+        <div class="row">
+            <div class="col-12 col-md-5"><strong>1ere colonne</strong> <br> Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Necessitatibus quas nobis incidunt quis? Laboriosam placeat eveniet atque distinctio
+                voluptate at?</div>
+            <div class="col-12 col-md-5 offset-2"><strong>2e colonne</strong> <br>Lorem ipsum dolor, sit amet
+                consectetur adipisicing elit. Necessitatibus quas nobis incidunt quis? Laboriosam placeat eveniet atque
+                distinctio voluptate at?</div>
+        </div><br>
+
+        <div class="container col-6">
+            <h4>Affichage d'une colonne avec un décalage</h4><br>
+            <div class="row offset-1">
+                <div class="col-11 "><strong>Colonne</strong> <br>Lorem ipsum dolor, sit amet consectetur adipisicing
+                    elit. Necessitatibus quas nobis incidunt quis? Laboriosam placeat eveniet atque distinctio voluptate
+                    at?</div>
+            </div><br>
+        </div><br>
+    </div>
+
+    <h2>Exercice 4</h2><br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 bg-beige border border-danger rounded text hauteur">Entete</div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="row">
+
+            <nav class="col-2 bg-beige border border-danger rounded">Menu</nav>
+            <section class="col-10 bg-beige border border-danger rounded">Section
+                <div class="row">
+                    <div class="col-10 padd">
+                        <div class="row">
+                            <article class="col-6 bg-beige border border-danger rounded text">Article</article>
+                            <article class="col-6 bg-beige border border-danger rounded text">Article</article>
+                            <article class="col-6 bg-beige border border-danger rounded text">Article</article>
+                            <article class="col-6 bg-beige border border-danger rounded text">Article</article>
+                            <article class="col-6 bg-beige border border-danger rounded text">Article</article>
+                            <article class="col-6 bg-beige border border-danger rounded text">Article</article>
+                        </div>
+                    </div>
+
+                    <div class="col-2 padd">
+                        <div class="row">
+                            <aside class="col-12 bg-beige border border-danger rounded text">Aside 2</aside>
+                            <aside class="col-12 bg-beige border border-danger rounded text">Aside 1</aside>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <section class="col-10 offset-2 bg-beige border border-danger rounded">section
+                <div class="row padd">
+                    <article class="col-6 bg-beige border border-danger rounded text">Article</article>
+                    <article class="col-6 bg-beige border border-danger rounded text">Article</article>
+                    <article class="col-6 bg-beige border border-danger rounded text">Article</article>
+                    <article class="col-6 bg-beige border border-danger rounded text">Article</article>
+                    <article class="col-6 bg-beige border border-danger rounded text">Article</article>
+                    <article class="col-6 bg-beige border border-danger rounded text">Article</article>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="bg-beige border border-danger rounded align-items-center justify-content-center text hauteur">
+                Pied de
+                page</div>
+
+        </div>
+
+    </div>
+
+    <script src="../js/bootstrap.js"></script>
+</body>
+
+</html>

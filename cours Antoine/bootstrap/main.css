@@ -1,0 +1,27 @@
+
+.row div {
+
+    min-height: 50px;
+    color: white;
+}
+
+.bg_red {
+
+    background-color: red;
+}
+
+.bg_green {
+    background-color: green;
+}
+
+.bg_blue {
+    background-color: blue;
+}
+
+.bg_yellow {
+    background-color: yellow;
+}
+
+.bg_orange {
+    background-color: orange;
+}

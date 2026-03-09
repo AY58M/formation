@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        #element1 {
+            border: 2px solid blue;
+        }
+
+        #element2 {
+            border: 2px solid green;
+        }
+
+        #element3 {
+            border: 2px solid yellow;
+        }
+
+        /* mobile et tablette classique */
+
+        @media (max-width : 767px) {
+            #container {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: start;
+
+            }
+
+        }
+
+        /* le reste avec largeur superieure à 767px */
+        @media (min-width : 767px) {
+            #container {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: start;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Test image responsive</h1>
+
+    <div id="container">
+        <!-- liste -->
+        <ul id="element1">
+            <li>un</li>
+            <li>deux</li>
+            <li>trois</li>
+            <li>quatre</li>
+        </ul>
+
+        <p id="element2">
+            <img src="../HTML/images/metro-paris.jpg" alt="metro paris" title="metro paris">
+        </p>
+
+        <p id="element3">
+            <img src="../HTML/images/plage.webp" alt="plage" title="plage">
+        </p>
+
+    </div>
+</body>
+
+</html>
