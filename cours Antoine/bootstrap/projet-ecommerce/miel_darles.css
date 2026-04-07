@@ -1,25 +1,45 @@
-body {
+.home_body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.35),
             rgba(0, 0, 0, 0.35)), url(images/bol-miel-table-bois.avif);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    padding-bottom: 80px;
+    background-position: center;
+    padding-bottom: 100px;
+}
+
+.listing_body {
+    background: #f7f2dd;
+      padding-bottom: 80px;
 }
 
 .bouton {
     background-color: #f4a300;
     color: white;
     border: none;
-    padding: 10px 40px;
-    font-size: 18px;
+    padding: 12px 45px;
+    font-size: 20px;
     font-weight: bold;
     border-radius: 50px;
-
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .bouton:hover {
     background-color: #d98c00;
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.avantage {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    border-radius: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.avantage:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
 .footer {
@@ -27,10 +47,12 @@ body {
     bottom: 0;
     width: 100%;
     background-color: white;
+    /* margin-top: 50px; */
+    z-index: 999;
 }
 
 .click {
-    height: 50vh;
+    height: 28vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,15 +66,134 @@ body {
     margin-top: 40px;
 }
 
-p {
+/* p {
     font-size: 20px;
+} */
+
+.bienvenue p,
+.produit-description {
+  font-size: 20px;
 }
 
-h5,
+/* h5,
 p {
     color: whitesmoke;
+} */
+.home_body h5,
+.home_body p {
+  color: whitesmoke;
+}
+
+
+.card-img-top {
+    height: 220px;
+    object-fit: contain;
 }
 
 .bienvenue h1 {
     font-size: 3rem;
+}
+
+/* img {
+    border-radius: 10px;
+} */
+
+.produit-card img,
+.produit-image {
+  border-radius: 10px;
+}
+
+.avantage img {
+  border-radius: 0;
+}
+
+.produit-card {
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.produit-card:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+.prix {
+    font-size: 20px;
+    font-weight: bold;
+    color: #f4a300;
+
+}
+
+.produit-card img {
+    margin-top: 10px;
+}
+
+/* a {
+    text-decoration: none;
+    color: inherit;
+} */
+
+.categorie-bar a,
+.produit-card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.produit-image {
+    border-radius: 15px;
+}
+
+.produit-titre {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.produit-prix {
+    font-size: 28px;
+    font-weight: bold;
+    color: #f4a300;
+}
+
+.produit-description {
+    font-size: 18px;
+}
+
+.texte {
+    color: black;
+}
+
+.text_bienvenue {
+    font-family: cursive;
+    font-size: 30px;
+}
+
+h1 {
+    font-family: cursive;
+}
+
+.badge-promo {
+    font-size: 18px;
+    padding: 8px 12px;
+}
+
+.categorie-bar a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px 15px;
+}
+
+
+.categorie-bar {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+
+.categorie-bar {
+    position: sticky;
+    top: 0;
+    z-index: 100
 }
