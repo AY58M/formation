@@ -97,7 +97,17 @@ ON r.id_vol = v.id_vol
 JOIN client AS c 
 ON r.id_client = c.id_client
 SET v.datetime_depart_prevu = '2025-11-15 18:00:00', v.datetime_arrivee_prevue = '2025-11-15 20:00:00'
-WHERE c.nom = 'Plantier' AND c.prenom = 'Maurice'AND v.numero_vol = 'AC2101';
+WHERE c.nom = 'Plantier' AND c.prenom = 'Maurice' AND v.numero_vol = 'AC2101';
+
+-- 3) Changer l´heure du vol reel de Maurice Plantier, celui-ci partira maintenant à 19h
+-- et arrivera à 21h
+UPDATE vol v
+JOIN reservation r 
+ON v.id_vol = r.id_vol
+JOIN client c 
+ON c.id_client = r.id_client
+SET v.datetime_depart_reel = '2025-11-15 19:00:00',v.datetime_arrivee_reelle = '2025-11-15 21:00:00'
+WHERE c.nom = 'plantier' AND c.prenom = 'maurice';
 
 -- 4) Changer tous les vols à destination de la ville de Paris pour Marseille
 UPDATE vol AS v
@@ -119,10 +129,17 @@ WHERE id_modele >= 1;
 -- Agrégats
 
 -- 1) Afficher le nombre total de clients
+SELECT COUNT(*) AS nb_clients FROM client;
 
+-- 2) Afficher le client le plus âgé
+SELECT nom, prenom, date_naissance FROM client
+ORDER BY date_naissance ASC
+LIMIT 1;
 
+-- 3) Afficher la première réservation pour le mois d’Octobre 2025
+SELECT * FROM reservation
+WHERE MONTH(datetime_reservation) = 10 AND YEAR(datetime_reservation) = 2025
+LIMIT 1;
 
-
-
-
-
+-- 4) Afﬁcher tous les codes internationaux des aéroports avec leur nom et le pays
+-- rangés dans l’ordre alphabétique 

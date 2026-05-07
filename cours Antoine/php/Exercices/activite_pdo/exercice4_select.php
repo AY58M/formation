@@ -49,7 +49,7 @@ $connection = new PDO($dsn, $username, $password, $options);
     // }
 
     ?>
-   <h3>Exercice_4-2</h3>
+    <h3>Exercice_4-2</h3>
     <?php
     $query = $connection->prepare("SELECT nom,prenom FROM client");
     $query->execute();
@@ -58,10 +58,10 @@ $connection = new PDO($dsn, $username, $password, $options);
     echo "<table>";
     echo "<tr><th>Nom</th><th>Prenom</th></tr>";
 
-    foreach ($results as $client){
+    foreach ($results as $client) {
         echo "<tr>";
-        echo "<td>" .$client['nom']. "</td>";
-        echo "<td>" .$client['prenom']. "</td>";
+        echo "<td>" . $client['nom'] . "</td>";
+        echo "<td>" . $client['prenom'] . "</td>";
         echo "</tr>";
     }
 

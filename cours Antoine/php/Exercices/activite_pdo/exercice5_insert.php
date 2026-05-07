@@ -62,7 +62,7 @@ $connection = new PDO($dsn, $username, $password, $options);
 
         $query = $connection->prepare(
             "INSERT INTO client (nom, prenom, email, date_naissance) 
-        VALUES (:nom, :prenom, :email, :date_naissance)"
+             VALUES (:nom, :prenom, :email, :date_naissance)"
         );
 
         $query->execute([
@@ -75,10 +75,9 @@ $connection = new PDO($dsn, $username, $password, $options);
         echo "Client ajouté !";
     }
 
+    // if($_SERVER)
+
     ?>
-
-
-
 
 </body>
 
