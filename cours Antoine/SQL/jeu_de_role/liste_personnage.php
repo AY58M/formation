@@ -1,7 +1,7 @@
 <?php
 $host = 'localhost';
 $base = 'jeu_de_role';
-$dsn = "mysql:host=$host;dbname=$base";
+$dsn = "mysql:host=$host;dbname=$base;charset=utf8";
 $user = 'admin';
 $password = 'resu_ass';
 
@@ -11,34 +11,107 @@ $options = [
     PDO::ATTR_EMULATE_PREPARES => false,
 ];
 
-// Connexion à la base de données
 $connection = new PDO($dsn, $user, $password, $options);
-$query = $connection->prepare("
-SELECT p.nom,p.titre,p.img_url,p.pv_max,p.pv,p.mana,p.mana_max,p.dext,p.forc,p.sag,p.chari,p.intel,p.const,p.classe_id,p.race_id,p.guilde_id
+
+$query = $connection->prepare(
+"
+SELECT
+    p.id,
+    p.nom,
+    p.titre,
+    p.img_url,
+    p.pv,
+    p.pv_max
 FROM personnages p
-JOIN classes c ON p.classe_id = c.id
-JOIN races r ON p.race_id = r.id
-JOIN guildes g ON p.guilde_id = g.id
 ORDER BY p.nom ASC
-");
+"
+);
 
 $query->execute();
 $personnages = $query->fetchAll();
-print_r($personnages);
 ?>
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liste des personnages</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+<body class="container mt-4">
 
-<body>
+<h1 class="mb-4">Liste des personnages</h1>
 
+<a href="index.php" class="btn btn-success mb-4">
+    Ajouter un personnage
+</a>
+
+<div class="row">
+
+<?php foreach ($personnages as $personnage) : ?>
+
+    <div class="col-md-4 mb-4">
+
+        <div class="card h-100">
+
+            <img
+                src="<?= $personnage['img_url']; ?>"
+                class="card-img-top"
+                alt="image personnage"
+                style="height:300px; object-fit:cover;"
+            >
+
+            <div class="card-body">
+
+                <h5 class="card-title">
+                    <?= htmlspecialchars($personnage['nom']); ?>
+                </h5>
+
+                <p class="card-text">
+                    <?= htmlspecialchars($personnage['titre']); ?>
+                </p>
+
+                <p>
+                    PV : <?= $personnage['pv']; ?> / <?= $personnage['pv_max']; ?>
+                </p>
+
+                <div class="d-flex gap-2">
+
+                    <a
+                        href="profil.php?id_perso=<?= $personnage['id']; ?>"
+                        class="btn btn-primary"
+                    >
+                        Voir
+                    </a>
+
+                    <a
+                        href="edition.php?id_perso=<?= $personnage['id']; ?>"
+                        class="btn btn-warning"
+                    >
+                        Éditer
+                    </a>
+
+                    <a
+                        href="suppression.php?id_perso=<?= $personnage['id']; ?>"
+                        class="btn btn-danger"
+                        onclick="return confirm('Supprimer ce personnage ?')"
+                    >
+                        Supprimer
+                    </a>
+
+                </div>
+</div>
+
+        </div>
+
+    </div>
+
+<?php endforeach; ?>
+
+</div>
+
+<script src="js/bootstrap.bundle.js"></script>
 </body>
-
 </html>
-
-?>

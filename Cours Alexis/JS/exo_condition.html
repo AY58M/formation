@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>1) Écrire un script qui demande un nombre et teste s’il est plus grand que 4</h3>
+    <script>
+        let nombre = Number(prompt('entrez un nombre'));
+        if (nombre > 4) {
+            console.log('le nombre est supérieur à 4');
+        } 
+         else {
+            console.log('le nombre n\'est pas supérieur à 4');
+        }
+    </script>
+    <h3>2) Écrire un script qui demande deux nombres et teste s’ils sont égaux ou différents</h3>
+    <script>
+        let nombre1 = Number(prompt('entrez le premier nombre'));
+        let nombre2 = Number(prompt('entrez le deuxième nombre'));
+        if (nombre1 == nombre2) {
+            console.log('les nombres sont égaux');
+        } else {
+            console.log('les nombres sont différents');
+        }
+    </script>
+    <h3>3) Écrire un script qui demande deux nombres et teste si le premier est égale à 25 et si le second nombre est égale à 13.Si le test est bon on affiche « ok » sinon on affiche « pas ok »</h3>
+    <script>
+        let nb1 = Number(prompt('premier nombre'));
+        let nb2 = Number(prompt('deuxième nombre'));
+        if (nb1 == 25 && nb2 == 13) {
+            console.log('ok');
+        } else {
+            console.log('pas ok');
+        }
+    </script>
+</body>
+</html>
