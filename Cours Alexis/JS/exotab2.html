@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const tab = ['a','b','r','i','e','p','o'];
+        const voyelles = ['a','e','i','o','u'];
+        let c = 0;
+        for (val of tab) {
+            if (voyelles.includes(val)) {
+                c++;
+            }
+        }
+        console.log(c);
+        let x = tab.includes('p');
+        console.log(x);
+        let y = tab.includes('q');
+        console.log(y);
+    </script>
+</body>
+</html>

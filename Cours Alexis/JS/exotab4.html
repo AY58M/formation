@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let firstEpisode = 'le grand départ';
+        let secondEpisode = 'les premiers pas';
+        let thirdEpisode = 'le nuage supersonique de tortue géniale';
+        let db = [firstEpisode, secondEpisode, thirdEpisode];
+        for (d of db) {
+            console.log(d);
+        }
+        let x = 'le grand malfaiteur';
+        let y = 'yamcha, l\'enfant terrible du désert';
+        db.unshift("le père de sangoku");
+        let numberOfEpisodes = db.length;
+        db.pop();
+    </script>
+</body>
+</html>

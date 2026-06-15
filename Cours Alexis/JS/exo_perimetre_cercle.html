@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //    let rayon = Number(prompt('entrez le rayon du cercle'));
+    //    let perimetre = 2 * Math.PI * rayon;
+    //    alert('le perimetre du cercle est de ' + perimetre);
+
+    // function perimetreCercle(rayon){
+    //     return 2 * Math.PI * rayon;
+    // }
+    // let rayon = Number(prompt('entrez le rayon du cercle'));
+    // let perimetre = perimetreCercle(rayon);
+    // alert('le perimetre du cercle est de ' + perimetre);
+
+    // En anonyme
+    // const perimetreCercle = function(rayon){
+    //     return 2 * Math.PI * rayon;
+    // }
+    // let rayon = Number(prompt('entrez le rayon du cercle'));
+    // let perimetre = perimetreCercle(rayon);
+    // alert('le perimetre du cercle est de ' + perimetre);
+
+    // En fléché
+    const perimetreCercle = (rayon) => {
+        return 2 * Math.PI * rayon;
+    }
+    let rayon = Number(prompt('entrez le rayon du cercle'));
+    let perimetre = perimetreCercle(rayon);
+    alert('le perimetre du cercle est de ' + perimetre);
+
+
+    </script>
+</body>
+</html>

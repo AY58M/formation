@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const tab = [3, 8, 11, 13, 19, 7];
+        const tab2 = tab.map(function(x, index){
+            if (index % 2 === 0) {
+                return x;
+            }
+            else {
+                return x*index;
+            }
+        });
+        console.log(tab2);
+
+    </script>
+</body>
+
+</html>

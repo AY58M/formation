@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-
 <body>
     <script>
-        let nb = Number(prompt('entrez un nombre'));
-        while (nb !== 10) {
-            alert('entrez un nombre egale à 10');
-            nb = Number(prompt('entrez un nombre'));
+        function hello(){
+            console.log ('hello');
         }
-        alert('Bravo');
+        function addition(a,b){
+            z=a+b;
+            return z;
+        }
+        hello ();
+        let res = addition(5,6);
+        console.log(res);
+
     </script>
 </body>
-
 </html>

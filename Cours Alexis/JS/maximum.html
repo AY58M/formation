@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function maximum(a, b) {
+        //     if (a > b) {
+        //         return a;
+        //     } else {
+        //         return b;
+        //     }
+        // }
+        // let x = Number(prompt('entrez le premier nombre'));
+        // let y = Number(prompt('entrez le deuxième nombre'));
+        // let max = maximum(x, y);
+        // alert('le maximum est de ' + max);
+
+        // En fléché
+        const maximum = (a, b) => {
+            return a > b ? a : b;
+        }
+        let x = Number(prompt('entrez le premier nombre'));
+        let y = Number(prompt('entrez le deuxième nombre'));
+        let max = maximum(x, y);
+        alert('le maximum est de ' + max);
+    </script>
+</body>
+</html>

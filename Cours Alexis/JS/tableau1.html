@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const tab = [10,5,8,4];
+        // alert (tab[1000]);
+        for(let i=0; i<tab.length;i++){
+            console.log(tab[i]);
+        }
+
+        // 2ème forme de boucle
+
+        for(t of tab){
+            console.log(t);
+        }
+
+        // 3ème forme de boucle
+
+        console.log('forEach');
+        tab.forEach (function(t){
+            console.log(t);
+        });
+
+    </script>
+</body>
+</html>

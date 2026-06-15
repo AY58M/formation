@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button class="" id="bouton_count">cliquer</button>
+    <div class="" id="counter">Nombre de clics : 0</div>
+    <script>
+        const bouton = document.querySelector("#bouton_count");
+        const texte = document.querySelector("#counter");
+
+        let nombreClics = 0;
+        bouton.addEventListener("click", () => {
+
+            nombreClics = nombreClics + 1;
+
+            texte.textContent = "Nombre de clics : " + nombreClics;
+        });
+
+    </script>
+
+
+
+</body>
+
+</html>

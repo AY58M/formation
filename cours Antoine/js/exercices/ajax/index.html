@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function ajax(url) {
+            return fetch(url).then(result => result.json());
+        }
+        function ajax_with_data(url, data) {
+            return fetch(url,
+                {
+                    method: 'POST',
+                    body: data
+                }
+            )
+                .then(
+                    response => response.json()
+                );
+        }
+
+        window.addEventListener('load', () => {
+            ajax("http://formation.arles/cours%20Antoine/js/exercices/ajax/list_tasks.php");
+            .then(
+                tasks => {
+                    tasks.forEach(task => {
+                        const new_task = document.createElement("div");
+                        new_task.textContent = task.name;
+                        document.querySelector("#list_task").appendChild(new_task);
+                    });
+                })
+            document.querySelector("#add_task").addEventListener('click', () => {
+                const form = document.querySelector("#form_task");
+                const form_data = new FormData(form);
+                const response = ajax_with_data("http://formation.arles/cours%20Antoine/js/exercices/ajax/create_task.php", form_data);
+                response.then(result => console.log(result));
+
+            });
+
+        });
+
+    </script>
+    <div id="list_task"></div>
+    <div>
+    </div>
+    <form id="form_task">
+        <input type="text" name="task_name" required>
+        <br>
+        <textarea name="task_description"></textarea>
+        <br>
+        <select name="task_priority">
+            <option value="1">Haute</option>
+            <option value="2">Moyenne</option>
+            <option value="3">Faible</option>
+        </select>
+    </form>
+    <button type="submit" id="add_task">Enregistrer</button>
+    </div>
+</body>
+
+</html>

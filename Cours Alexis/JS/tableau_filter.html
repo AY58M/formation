@@ -1,21 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-
 <body>
     <script>
-        let nb = Number(prompt('entrez un nombre'));
-        while (nb !== 10) {
-            alert('entrez un nombre egale à 10');
-            nb = Number(prompt('entrez un nombre'));
-        }
-        alert('Bravo');
+        const age = [12, 21, 14, 19, 16];
+        const majeur = age.filter(x => x > 18);
+        console.log(majeur);
     </script>
 </body>
-
 </html>

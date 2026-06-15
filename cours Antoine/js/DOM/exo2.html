@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button class="" id="bouton">cliquer</button>
+
+    <ul id="liste">
+
+    </ul>
+
+    <input type="text" id="input_list">
+
+    <script>
+        window.addEventListener('load', () => {
+            const btn = document.querySelector('#bouton');
+            btn.addEventListener('click', () => {
+                const input = document.querySelector('#input_list').value;
+                const element_li = document.createElement('li');
+                element_li.textContent = input;
+                const ul = document.querySelector('#liste');
+                ul.appendChild(element_li);
+            })
+        })
+
+
+    </script>
+</body>
+
+</html>
