@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .class1{
+            background-color: magenta;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="div1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto exercitationem modi voluptas est possimus mollitia corporis similique libero dolorum ipsum laboriosam numquam, harum assumenda sunt aut maiores obcaecati quod qui.
+    Est ipsa neque molestias quisquam cupiditate velit minima animi facere natus. Deserunt natus mollitia nihil consequatur id inventore, impedit eaque qui cumque explicabo maiores alias, totam, non laborum dolorum cupiditate!</div>
+
+    <div id="liste">
+
+    </div>
+
+    <button id="monbouton1">bouton 1</button>
+    <button id="monbouton2">bouton 2</button>
+
+    <script>
+        let monBouton1 = document.getElementById('monbouton1').addEventListener('click', function(){
+            document.getElementById('div1').classList.add('class1');
+        });
+
+        let monBouton2 = document.getElementById('monbouton2').addEventListener('click',
+            function(){
+                document.getElementById('liste').innerHTML = `<ul>
+                    <li>Geneve</li>
+                    <li>Mausanne</li>
+                    <li>Berne</li>
+                    </ul>`;
+            });
+
+    </script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="resultat"></p>
+    <button id="monbouton">Cliquez</button>
+    <script>
+        let monbouton = document.getElementById('monbouton');
+        monbouton.addEventListener('dblclick', function () {
+            let resultat = document.getElementById('resultat');
+            resultat.innerHTML = "<strong>coucou</strong>";
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="un">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+    <h2 id="deux">Sous titre</h2>
+    <button id="monbouton">Cliquez ici</button>
+    <script>
+        let monBouton = document.getElementById("monbouton").addEventListener
+            ("dblclick", function () {
+                document.getElementById("un").style.color = "blue";
+                document.getElementById("deux").style.color = "red";
+                document.querySelector("body").style.backgroundColor = "green";
+            });
+
+    </script>
+</body>
+
+</html>

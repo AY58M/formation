@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Exercice Javascript – Evenement et
+        formulaire</h2>
+
+    <h3>Exercice 1 : Alerte au clic</h3>
+
+    <button id="bouton1">Click ici</button>
+    <script>
+        document.getElementById("bouton1").addEventListener('click',
+            function () {
+                alert("Bravo, tu as cliqué !");
+            });
+
+    </script>
+
+    <h3 paragraph1>Exercice 2 : Modifier le texte d’un paragraphe</h3>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque laboriosam modi ratione, error necessitatibus,
+        quas, maxime unde sunt ullam laudantium exercitationem eos magnam sed minima nostrum odit incidunt. Consectetur,
+        iusto.
+        Sunt nisi quae exercitationem dolorum harum atque illo accusamus assumenda magnam asperiores pariatur voluptate
+        quam, maiores modi sequi eos quaerat labore doloribus, animi maxime architecto debitis. Adipisci perferendis nam
+        repellendus.</p>
+
+    <button id="bouton2">Click ici</button>
+
+    <script>
+        document.getElementById("bouton2").addEventListener('click',
+            function () {
+                document.getElementById("un").textContent = "texte xhangé";
+
+
+            });
+
+    </script>
+
+    <h3>Exercice 3 : Afficher la valeur d’un champ texte</h3>
+    <form>
+        <label for="montext">Mon texte :</label>
+        <input type="text" name="montexte" id="montexte">
+        <button id="monbouton">Envoyer</button>
+    </form>
+    <p id="resultat"></p>
+    <script>
+        let monBouton = document.getElementById('monbouton').addEventListener('click', function (e) {
+            e.preventDefault();
+            let monTexte = document.getElementById('montexte').value;
+            let resultat = document.getElementById('resultat')
+            resultat.innerHTML = monTexte;
+
+        })
+    </script>
+
+    <h3>Exercice 4 : Changer la couleur au survol</h3>
+
+
+    <button id="monBouton">Clique ici</button>
+
+    <script>
+        let bouton = document.getElementById("monBouton");
+
+        bouton.addEventListener("mouseover", function () {
+            bouton.style.backgroundColor = "orange";
+        });
+
+        bouton.addEventListener("mouseout", function () {
+            bouton.style.backgroundColor = "";
+        });
+    </script>
+
+    <h3>Exercice 5 : Afficher le nombre de clics</h3>
+    <button id="monBtn">Clique ici</button>
+
+    <p id="result">Nombre de clics : 0</p>
+
+    <script>
+        let compteur = 0;
+
+        let btn = document.getElementById("monBtn");
+        let paragraphe = document.getElementById("result");
+
+        btn.addEventListener("click", function () {
+            compteur = compteur + 1;
+            paragraphe.textContent = "Nombre de clics : " + compteur;
+        });
+    </script>
+
+    <h3>Exercice 6 : Evenement avancé</h3>
+    
+    <button id="voiture">Liste de voiture</button>
+
+    <ul id="liste"></ul>
+
+    <script>
+        document.getElementById("voiture").addEventListener("dblclick", function () {
+
+            document.getElementById("liste").innerHTML = `
+        <li>Peugeot</li>
+        <li>Renault</li>
+        <li>Citroën</li>
+        <li>BMW</li>
+        <li>Audi</li>
+    `;
+        });
+    </script>
+
+    <button id="btnCouleur">Changer les couleurs</button>
+
+    <p>Paragraphe 1</p>
+    <p>Paragraphe 2</p>
+
+    <script>
+        document.getElementById("btnCouleur").addEventListener("click", function () {
+
+            document.body.style.backgroundColor = "red";
+
+            let paragraphes = document.querySelectorAll("p");
+
+            paragraphes.forEach(function (p) {
+                p.style.color = "green";
+            });
+        });
+    </script>
+
+    <div class="article">
+        Ceci est un texte dans la div.
+    </div>
+
+    <script>
+        document.querySelector(".article").addEventListener("mouseover", function () {
+
+            this.style.color = "red";
+
+        });
+    </script>
+
+    <button id="btnAfficher">Afficher / Cacher</button>
+
+    <div id="madiv">
+        Bonjour tout le monde !
+    </div>
+
+    <br>
+
+    <script>
+        document.getElementById("btnAfficher").addEventListener("click", function () {
+
+            let div = document.getElementById("madiv");
+
+            if (div.style.display === "none") {
+                div.style.display = "block";
+            } else {
+                div.style.display = "none";
+            }
+
+        });
+    </script>
+
+    <button id="btnCompteur">Clique ici</button>
+
+    <p id="resultats">Compteur : 0</p>
+
+    <script>
+        let cmpteur = 0;
+
+        document.getElementById("btnCompteur").addEventListener("click", function () {
+
+            cmpteur++;
+
+            document.getElementById("resultats").textContent =
+                "Compteur : " + cmpteur;
+
+        });
+    </script>
+
+    <h3>Exercice 7 : Affichage de la saisie</h3>
+
+    <form id="monFormulaire">
+        <input type="text" id="monTexte">
+        <button type="submit">Afficher</button>
+    </form>
+
+
+    <p id="results"></p>
+
+    <script>
+        document.getElementById("monFormulaire").addEventListener("submit", function (event) {
+
+            event.preventDefault();
+
+            let texte = document.getElementById("monTexte").value;
+
+            document.getElementById("results").textContent = texte;
+        });
+    </script>
+
+
+
+
+</body>
+
+</html>
